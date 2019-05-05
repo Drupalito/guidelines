@@ -1,0 +1,35 @@
+
+DATE:
+  BEGIN:   "2018-3-23T10:00:00Z"
+  RECETTE: "2018-4-23T10:00:00Z"
+  END:     "2018-6-23T10:00:00Z"
+
+REPO: 0
+
+# Settings
+DIR:     "fake_install"
+PATH_TO_THEME: /PATH_TO_THEME
+PATH_TO_SOURCE: /PATH_TO_SOURCE
+DB_NAME: "d7starter.fake_install"
+URL:     "d7starter.localhost"
+
+# Rename Theme in
+SITE_PROJECT: "astarter"
+
+# Site
+SITE_NAME:    "d7Starter"
+SITE_SLOGAN:  "Root Project for Grid System"
+SITE_COUNTRY: "FR"
+SITE_LANG:    "fr"
+# Owner
+OWNER_NAME:    "d7starter"
+OWNER_CONTACT: "John Doe"
+OWNER_ADDRESS: "rue de Bordeaux"
+OWNER_ADDRESS_CODE_POSTAL: "33000"
+OWNER_ADDRESS_LOCALITY: "Bordeaux"
+OWNER_EMAIL:   "john.doe@example.com"
+OWNER_PHONE:   "0000000000"
+OWNER_URL:     "http://d7starter.localhost"
+
+# Directories
+ROOT:  "PATH_TO_PROJECT"

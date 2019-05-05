@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.isolang }}" dir="{{ site.isodir }}">
+{% include head.html %}
+<body class="guideline">
+  <div id="page" class="page">
+
+    {% include header.html %}
+
+    <div class="page-container">
+      <div id="container" class="container__region container ptl">
+        <div class="row">
+          <div id="content" class="col-xs-12">
+            <main id="main" class="main" role="main">
+              <div class="main__header a11y">
+                <h1 class="main__title">{{ page.title }}</h1>
+                {% if page.description and page.description != "" %}
+                  <p class="main__description">{{ page.description }}</p>
+                {% endif %}
+                {% if page.date_created or page.date_updated %}
+                  <ul class="main__meta list-inline list-separate">
+                    <li>Date de publication : <small>{{ page.date_created | date: "%-d %b, %Y" }}</small></li>
+                    {% if page.date_updated and page.date_created != page.date_updated %}
+                      <li>Modification : <small>{{ page.date_updated | date: "%-d %b, %Y" }}</small></li>
+                    {% endif %}
+                  </ul>
+                {% endif %}
+              </div>
+              {{ content }}
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

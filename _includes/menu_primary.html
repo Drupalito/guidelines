@@ -1,0 +1,57 @@
+<div class="page-secondary noprint">
+  <div class="container__region container">
+    <div class="row row-sm-height">
+      <div class="col-xs-12 col-sm-4">
+        <p class="h3 caps mbn">{{ current_collection }}</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 text-right">
+        <ul class="primary">
+
+          {% assign collections = site.[current_collection] %}
+
+          {% for item in collections %}
+
+            {% if item.group_index == true %}
+
+            {% assign currentgroup = item.group %}
+
+              {% if currentgroup != group %}
+
+                {% if page.group == currentgroup %}
+                  <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}">{{ currentgroup }}</a></li>
+                {% else %}
+                  <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}">{{ currentgroup }}</a></li>
+                {% endif %}
+
+                {% assign group = currentgroup %}
+
+              {% endif %}
+
+            {% endif %}
+
+          {% endfor %}
+
+          {% if current_collection contains "styleguide" %}
+            {% assign items = site.pages | where: "group", "styleguide" %}
+            {% for item in items %}
+            {% unless item.category == 'helpers' %}
+
+              {% assign currentcategory = item.category %}
+              {% if currentcategory != category %}
+
+                {% if page.category == currentcategory %}
+                  <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}.html">{{ currentcategory }}</a></li>
+                {% else %}
+                  <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}.html">{{ currentcategory }}</a></li>
+                {% endif %}
+
+                {% assign category = currentcategory %}
+              {% endif %}
+            {% endunless %}
+            {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

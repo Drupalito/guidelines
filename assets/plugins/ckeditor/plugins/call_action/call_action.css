@@ -1,0 +1,34 @@
+/* Small CSS to differentiate tabs durng edition */
+.frame {
+  border: dashed 2px #d81b60;
+  padding: 20px;
+  position: relative;
+}
+.frame .btn:before {
+  content: '';
+  border: dashed 1px #1e88e5;
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+}
+.frame .frame__excerpt {
+  border: dashed 1px #43a047;
+  margin-bottom: 5px;
+}
+
+.frame .btn + .btn {
+  margin-left: 1em;
+}
+
+.frame:before {
+  content: 'Call To Action';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #d81b60;
+  color: #fff;
+}

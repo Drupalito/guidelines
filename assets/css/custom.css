@@ -1,0 +1,100 @@
+
+body,
+mark {
+  background: #f1f1f1;
+}
+
+td pre {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.main--white {
+  background: #fff;
+  padding: 1.5em;
+  border: 1px solid #D6D7D9;
+}
+.main-meta {
+  margin-top: 0;
+  border-bottom: 2px solid #D6D7D9;
+  padding-bottom: 1em;
+}
+
+.styleguide__demo .hamburger {
+  position: relative;
+  top: 0;
+  margin-top: auto;
+}
+
+.page-banner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px){
+  .banner .branding {
+    display: block;
+  }
+}
+
+.branding .primary a {
+  line-height: 6em;
+  border-bottom-width: 12px;
+  color: #fff;
+}
+.branding .primary a:hover,
+.branding .primary a:focus,
+.branding .primary a.active {
+  border-bottom-color: #fff;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .page-banner ul.primary {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .page-banner ul.primary > li {
+    flex: 0 0 auto;
+  }
+
+  .branding .primary a {
+    line-height: 3em;
+    border-bottom-width: 4px;
+  }
+}
+
+#container {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+.page-secondary {
+  position: relative;
+  background: #fff;
+}
+.page-secondary ul.primary {
+  font-size: 90%;
+}
+
+.fa--round {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.block__content ul.primary a,
+.block__content ul.primary li>span {
+  font-size: 85%;
+}

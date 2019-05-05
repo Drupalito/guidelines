@@ -1,0 +1,17 @@
+/* Small CSS to differentiate tabs durng edition */
+.texte-chapeau {
+  border: dashed 2px #000;
+  padding: 20px;
+  position: relative;
+}
+
+.texte-chapeau:before {
+  content: 'Chapeau';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #000;
+  color: #fff;
+}

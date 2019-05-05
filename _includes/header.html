@@ -1,0 +1,36 @@
+<div class="page-top top pvs noprint">
+  <div id="page-top" class="top__region container">
+    <div class="row row-xs-height">
+      <div class="col-xs-6 col-sm-8 mvn">
+        <div class="block__content">
+          <ul class="list-inline list-separate">
+            <li><a href="#"><span class="fa fa-lock" aria-hidden="true"></span> Offres de formations</a></li>
+            <li><a href="#"><span class="fa fa-lock" aria-hidden="true"></span> e-Formations</a></li>
+            <li><a href="#"><span class="fa fa-lock" aria-hidden="true"></span> Jetons support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="search noprint col-xs-6 col-sm-4" id="search">
+        <div id="search" class="search pull-right">
+            <form class="search__form" role="search" action="/" method="post" id="search-form">
+              <input title="Lorem ipsum dolor sit…" placeholder="Lorem ipsum dolor sit…" type="search" name="search_block_form" value="" size="30" class="search__input form-text"><button class="search__submit btn btn--icon" title="Lorem ipsum dolor sit…" type="submit" name="op"><span class="fa fa-search" aria-hidden="true"></span> Search</button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-banner banner page-before_banner before_banner">
+  <header id="banner" role="banner" class="banner__region container">
+    <div class="row row-sm-height">
+      <div class="col-xs-12 col-sm-4">
+        <p class="logo"><a href="{{ "/index.html" | prepend: basePath }}" itemprop="url" id="mOrga" title="{{ site.SITE_NAME }} (Home)" class="logo__link" rel="home"><span class="logo__content"><span itemprop="name" class="logo__name">{{ site.SITE_NAME }}</span><span itemprop="description" class="logo__slogan">{{ site.description }}</span></span></a></p>
+      </div>
+      <div class="col-xs-12 col-sm-8 noprint">
+        <div class="branding">
+          {% include header_menu.html %}
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

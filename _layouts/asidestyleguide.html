@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ site.isolang }}" dir="{{ site.isodir }}">
+{% include head.html %}
+<body class="guideline">
+  <div id="page" class="page">
+
+    {% include header.html %}
+    {% include menu_primary.html %}
+
+    <div class="page-container">
+      <div id="container" class="container__region container">
+        <div class="row">
+          <div class="aside aside--left col-xs-12 col-sm-3">
+            <aside id="aside_left" role="complementary" class="aside__region">
+
+              {% if page.category %}
+              {% else %}
+                {% if current_group %}
+                  {% assign aside = site[current_collection] %}
+                  {% assign asideSort = aside | where: "group", current_group %}
+
+                  <div id="block-views-most-read-block" class="block block--views block--menu block--first first odd">
+                    <p class="block__title">{{ current_group }}</p>
+                    <div class="block__content">
+                      <ul class="primary list-none">
+                        {% for item in asideSort %}
+
+                          {% if item.url == page.url %}
+                            <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}"><span class="bold">{{ item.title }}</span></a></li>
+                          {% else %}
+                            <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}"><span>{{ item.title }}</span></a></li>
+                          {% endif %}
+
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endif %}
+
+              {% if page.category %}
+                {% if current_collection contains "styleguide" %}
+                  {% assign items = site.pages | where: "group", "styleguide" | sort: 'title' %}
+                  <div id="block-views-most-read-block" class="block block--views block--menu block--first first odd">
+                    <p class="block__title">{{ page.category }}</p>
+                    <div class="block__content">
+                      <ul class="primary list-none">
+                        {% for item in items %}
+                          {% if page.category == item.category %}
+                            {% if page.url == item.url %}
+                              <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}.html"><span class="bold">{{ item.title }}</span></a></li>
+                            {% else %}
+                              <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}.html"><span>{{ item.title }}</span></a></li>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endif %}
+
+            </aside>
+          </div>
+          <div id="content" class="col-xs-12 col-sm-9">
+            <main id="main" class="main" role="main">
+              <div class="main__header">
+                <h1 class="main__title">{{ page.title }}</h1>
+                {% if page.description and page.description != "" %}
+                  <div class="main__description">{{ page.description | markdownify }}</div>
+                {% endif %}
+                {% if page.date_created or page.date_updated %}
+                  <ul class="main__meta list-inline list-separate">
+                    <li>Date de publication : <small>{{ page.date_created | date: "%-d %b, %Y" }}</small></li>
+                    {% if page.date_updated and page.date_created != page.date_updated %}
+                      <li>Modification : <small>{{ page.date_updated | date: "%-d %b, %Y" }}</small></li>
+                    {% endif %}
+                  </ul>
+                {% endif %}
+              </div>
+              {{ content }}
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </div>
+</body>
+</html>

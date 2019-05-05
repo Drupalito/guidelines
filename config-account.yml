@@ -1,0 +1,68 @@
+
+# DEVELOP
+DEV:
+  URL: ""
+  URL_ADMIN: "/user"
+  USERS:
+    ADMIN:
+      USER: "admin12"
+      PASS: "admin12"
+      EMAIL: "axel@aquelito.fr"
+    CONTRIB:
+      USER: "contrib12"
+      PASS: "contrib12"
+      EMAIL: "bemito33@gmail.com"
+  SSH:
+    HOST: ""
+    PORT: "80"
+    USER: ""
+    PASS: ""
+  SQL:
+    HOST: ""
+    PORT: "3306"
+    USER: ""
+    PASS: ""
+  FTP:
+    HOST: ""
+    PORT: "20"
+    USER: ""
+    PASS: ""
+  PMA:
+    HOST: ""
+    URL: "/phpmyadmin"
+    USER: ""
+    PASS: ""
+
+# PROD
+PROD:
+  URL: ""
+  URL_ADMIN: "/user"
+  USERS:
+    ADMIN:
+      USER: "admin15"
+      PASS: ""
+      EMAIL: ""
+    CONTRIB:
+      USER: "contrib15"
+      PASS: ""
+      EMAIL: ""
+  SSH:
+    HOST: ""
+    PORT: "80"
+    USER: ""
+    PASS: ""
+  SQL:
+    HOST: ""
+    PORT: "3306"
+    USER: ""
+    PASS: ""
+  FTP:
+    HOST: ""
+    PORT: "20"
+    USER: ""
+    PASS: ""
+  PMA:
+    HOST: ""
+    URL: "/phpmyadmin"
+    USER: ""
+    PASS: ""

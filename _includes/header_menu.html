@@ -1,0 +1,18 @@
+<ul class="primary">
+
+  {% for collection in collections %}
+    {% assign name = collection.label %}
+    {% if name != "posts" %}
+
+      {% assign items = site.[name] | where:"group_index", true | sort: 'weight' %}
+      {% assign itemFirst = items[0] %}
+
+      {% if name == current_collection %}
+        <li class="menu__item"><a class="menu__link active" href="{{ itemFirst.url | prepend: basePath }}">{{ name | capitalize }}</a></li>
+      {% else %}
+        <li class="menu__item"><a class="menu__link" href="{{ itemFirst.url | prepend: basePath }}">{{ name | capitalize }}</a></li>
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+</ul>

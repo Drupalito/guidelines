@@ -1,0 +1,25 @@
+/* Small CSS to differentiate tabs durng edition */
+.lettrine {
+  border: dashed 2px #d81b60;
+  padding: 20px;
+  position: relative;
+}
+.lettrine p {
+  border: dashed 1px #43a047;
+  margin-top: 5px;
+  padding: 5px;
+}
+.lettrine p:first-child {
+  border: dashed 1px #1e88e5;
+}
+
+.lettrine:before {
+  content: 'Lettrine';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #d81b60;
+  color: #fff;
+}

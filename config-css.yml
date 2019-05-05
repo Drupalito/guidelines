@@ -1,0 +1,71 @@
+
+# Base font size
+# @type Length
+BASE_FONT_SIZE: "16px"
+# Base line_height
+# @type Length
+BASE_LINE_HEIGHT: "24px"
+# Body background.
+# @type Color
+BODY_BACKGROUND: "#fff"
+# Body color.
+# @type Color
+BODY_COLOR: "#333"
+# Font stack.
+FONT_FAMILIES:
+  BODY:     "'Open Sans', Helvetica, Arial, sans-serif"
+  HEADLINE: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  PRE:      "Menlo, Monaco, Consolas, 'Courier New', monospace"
+  PRINT:    "'Helvetica Neue', Helvetica, Arial, sans-serif"
+# Heading Font Size
+FONT_SIZE:
+  H1: "28px"
+  H2: "24px"
+  H3: "20px"
+  H4: "18px"
+  H5: "16px"
+  H6: "14px"
+# Colorz
+COLORZ:
+  DEFAULT:   "#F31B44"
+  PRIMARY:   "#161324"
+  SECONDARY: "#343140"
+COLORZ_GREY:
+  GREY_DARK:     "#323A45"
+  GREY:          "#5B616B"
+  GREY_LIGHT:    "#AEB0B5"
+  GREY_LIGHTER:  "#D6D7D9"
+  GREY_LIGHTEST: "#F1F1F1"
+# Links colors.
+LINK:
+  COLOR:   "#F31B44"
+  HOVER:   "#161324"
+  ACTIVE:  "#161324"
+  VISITED: "#F31B44"
+# Messages states colorz
+MESSAGES:
+  INFO:    "#477bb6"
+  WARNING: "#ddae1e"
+  ERROR:   "#b64747"
+  STATUS:  "#77b647"
+# default `<dt>` width
+# @type string
+DEFINITION_INLINE_WIDTH: "150px"
+# Background color html <mark>.
+# @type Color
+HIGHLIGHT_MARK_COLOR: "#ff0"
+# Selection text color.
+# @type Color
+SELECTION_BACKGROUND: "#fff8ab"
+# Selection text background.
+# @type Color
+SELECTION_COLOR: "#666"
+# Settings Grid
+# Extra small screen / phone
+SCREEN_XS_MIN: "480px"
+# Small screen / tablet
+SCREEN_SM_MIN: "768px"
+# Medium screen / desktop
+SCREEN_MD_MIN: "992px"
+# Large screen / wide desktop
+SCREEN_LG_MIN: "1200px"

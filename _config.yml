@@ -1,0 +1,55 @@
+safe: false
+
+# build settings
+markdown: kramdown
+highlighter: rouge
+lsi: false
+permalink: "/:title"
+
+title: "Documentation"
+description: "Documentation Projet"
+baseurl: ""
+url: "" # replace by your site's url
+static_files: "images"
+# google analytics tracking code, please change the value
+g_analytics: ""
+
+# language settings
+isolang: fr
+isodir: ltr
+
+verbose: true
+collections:
+  project:
+    permalink: /:collection/:name.html
+    output: true
+    weight: 0
+  docs:
+    permalink: /:collection/:name.html
+    output: true
+    weight: 1
+  styleguide:
+    permalink: /:collection/:name.html
+    output: true
+    weight: 2
+  reports:
+    permalink: /:collection/:name.html
+    output: true
+    weight: 3
+  templates:
+    permalink: /:collection/:name.html
+    output: true
+    weight: 4
+  # drupal:
+  #   permalink: /:collection/:name.html
+  #   output: true
+  #   weight: 5
+  # contribution:
+  #   permalink: /:collection/:name.html
+  #   output: true
+  #   weight: 6
+
+# exclude files
+exclude:
+  - LICENSE
+  - README.md

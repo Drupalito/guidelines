@@ -20,7 +20,7 @@ weight: 0
 
 ## Légende
 
-Préfix à indiquer sur les maquettes.\\
+Préfix à indiquer sur les maquettes.  
 Exemple: **`vv-NOM_DE_LA_MAQUETTE.psd`**
 
 * <mark class="mark">ND</mark> : Non débuté

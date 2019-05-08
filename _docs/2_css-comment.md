@@ -19,7 +19,8 @@ Uitliser ce type de commentaires pour commenter les nouveaux composants et modul
 
 ## Générer la doc
 
-Pour automatiser la création de la documentation CSS. Il convient de renseigner correctement tous les comportements.\\
+Pour automatiser la création de la documentation CSS. Il convient de renseigner correctement tous les comportements.  
+
 Ci-dessous, un exemple de commentaire CSS valide pour la génération de la documentation.
 
 ```css

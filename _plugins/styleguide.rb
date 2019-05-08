@@ -22,7 +22,7 @@ module Jekyll
     priority :low
 
     REGEX_HEADER    = /^\s*---\s(.*?)\s---[\r]?$/m
-    REGEX_CODE      = /(```[a-z ](.*?)\n[\s\S]*?\n```)/
+    REGEX_CODE      = /```([a-z].*?)\n([\s\S]*?)\n```/
     REGEX_INTERCODE = /\*\/((.*?)\n[\s\S]*?)\/\*?(doc|end)/m
 
     def read_file(file_name)
@@ -48,18 +48,21 @@ module Jekyll
       demo     = ""
       language = ""
       snippet  = ""
+      hasDemo  = ""
+      hasPalette = ""
 
       if REGEX_CODE.match(markdown)
         extract_demo = REGEX_CODE.match(markdown)
 
-        extract_language = extract_demo[0].lines.first.split("```")
-        language = extract_language[1].strip
+        language = extract_demo[1].strip.split(' ')
 
-        demo = extract_demo[0].sub("```#{language}", '').sub("```", '')
+        hasDemo = language.include?('demo')
+        hasPalette = language.include?('colorz')
+        demo = extract_demo[2].strip
 
         # extract_snippet = Pygments.highlight(extract_demo[0].strip.gsub(/^[ \t]{2}/m,''), :lexer => language)
-        extract_snippet = (extract_demo[0].strip.gsub(/^[ \t]{2}/m,''))
-        snippet = extract_snippet.sub("```#{language}", '').sub("```", '').strip
+        extract_snippet = (demo.gsub(/^[ \t]{2}/m,''))
+        snippet = extract_snippet.strip.sub("```#{extract_demo[1]}", '').sub("```", '')
 
         markdown = markdown.sub(extract_demo[0], '')
       end
@@ -72,9 +75,11 @@ module Jekyll
         :show        => data.has_key?('show'),
         :markdown    => markdown,
         :markdowncode=> comment,
-        :syntax_lang => language,
+        :syntax_lang => language[0],
         :snippet     => snippet,
-        :demo        => demo
+        :demo        => (hasDemo ? demo : demo ),
+        :hasDemo => hasDemo,
+        :hasPalette => hasPalette
       )
 
       return output;
@@ -198,9 +203,11 @@ module Jekyll
         output += "<div class='styleguide__content'>"
         output += converter.convert(fi)
         output += "</div>"
-        # output += block[:syntax_lang]
-        if block[:demo]
+        if block[:demo] != ""
           output += "<div class='styleguide__demo'>"
+          # if block[:syntax_lang]
+          #   output += converter.convert(block[:syntax_lang].strip)
+          # end
           output += converter.convert(block[:demo])
           output += "</div>"
         end

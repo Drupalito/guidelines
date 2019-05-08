@@ -10,7 +10,8 @@ styles_css:
 
 Code issu de [Veröffentlicht von Andre](http://firchow.net/bootstrap3-grid-debug/){:rel="external"}.
 
-Un petit fichier CSS affiche la classe de grille utilisée dans chaque colonne. Les colonnes sont surlignées en couleur, chaque taille (points d'arrêt `xs`, `sm`, `md` et `lg`) à sa propre couleur.\\
+Un petit fichier CSS affiche la classe de grille utilisée dans chaque colonne. Les colonnes sont surlignées en couleur, chaque taille (points d'arrêt `xs`, `sm`, `md` et `lg`) à sa propre couleur.
+
 La taille d'écran utilisée est affichée dans le coin supérieur droit.
 
 Le tout est fait sur une base CSS, donc aucun code JavaScript supplémentaire n'est nécessaire. Intégrez simplement le fichier `debug.grid.css` en tant que dernier fichier CSS sur les pages.

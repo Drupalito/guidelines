@@ -19,7 +19,7 @@ Liste des librairies jQuery utilisées régulièrement sur les thémes.
 
 Pour mettre un scroll doux et animé, vous pouvez ajouter une class CSS `.scroll` sur vos liens et boutons.
 
-Cette classe est utilisé par le module custom Drupal `scrolltotop`.\\
+Cette classe est utilisé par le module custom Drupal `scrolltotop`.  
 Elle permet, en cliquant sur un bouton, de revenir en haut de page.
 
 Exemple : [Scroll to banner](#banner){:.scroll}

@@ -41,7 +41,7 @@ Le dossier `scss/` est divisé en plusieurs dossiers.
 
 ## Compilation
 
-Afin de complier le dossier `source/` vous devra installer les fichiers de tâches GULP.\\
+Afin de complier le dossier `source/` vous devra installer les fichiers de tâches GULP.
 Pour cela télécharger le package GULP.
 
 Au préalable, vous devez avoir:
@@ -61,7 +61,7 @@ Maintenant, il faut installer les dépendances.
   npm install
 ```
 
-Ok, les fichiers sont en place.\\
+Ok, les fichiers sont en place.
 Il reste à modifier `config.yml` comme si dessous... [vérifier les `path.dist` et `path.src`]
 
 ```yaml
@@ -108,7 +108,7 @@ assets:
 
 Pour exécuter une tâche, taper dans le terminal `gulp nom_de_la_tache`.
 
-L'utilisation du flag `--prod` aura pour but d'optimiser les fichiers pour une utilisation en production.\\
+L'utilisation du flag `--prod` aura pour but d'optimiser les fichiers pour une utilisation en production.  
 Utilisation: `gulp nom_de_la_tache --prod`.
 
 ### Tâches individuelles

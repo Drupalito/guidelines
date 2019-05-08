@@ -25,7 +25,7 @@ L'attribut `name` ne peut pas faire office d'attribut `titre`.
 
 <h2 class="ok"><span class="fa fa-check ok" aria-hidden="true"></span> Valide</h2>
 
-L'attribut `title` est présente.\\
+L'attribut `title` est présente.  
 **Le titre de la page affichée par l'iframe, peut être utilisé comme titre.**
 
 [RGAA: note sur les titres de cadres](https://references.modernisation.gouv.fr/rgaa-accessibilite/glossaire.html#titre-de-cadre)

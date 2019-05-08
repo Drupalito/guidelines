@@ -25,7 +25,7 @@ Si il s'agit d'**une image décorative** alors l'attribut `alt` doit être vide.
 
 <h2 class="ok"><span class="fa fa-check ok" aria-hidden="true"></span> Valide</h2>
 
-L'attribut `title` est présente.\\
+L'attribut `title` est présente.  
 **Le titre de la page affichée par l'iframe, peut être utilisé comme titre.**
 
 [RGAA: note sur les alternatives d'images](https://references.modernisation.gouv.fr/rgaa-accessibilite/glossaire.html#alternative-textuelle-image)

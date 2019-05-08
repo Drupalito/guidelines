@@ -9,8 +9,8 @@ weight: 99
 
 ## AXEL ROCHE
 
-Développeur Front End\\
-Spécialisé en Accessibilité Numérique\\
+Développeur Front End  
+Spécialisé en Accessibilité Numérique  
 et CMS Drupal 7 & 8, Themes & Modules.
 
 <dl class="definition-inline">

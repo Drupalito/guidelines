@@ -19,6 +19,7 @@
 .styleguide__title {
   margin-bottom: 0;
 }
+.styleguide__demo .hero,
 .styleguide__demo .fullscreen {
   height: 500px;
   width: 100%;

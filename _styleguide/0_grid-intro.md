@@ -14,7 +14,7 @@ weight: 0
 1. Utiliser les lignes pour créer des groupes horizontaux de colonnes.
 1. Le contenu doit être placé dans des colonnes et seules les colonnes peuvent être des enfants immédiats de lignes (`.row`).
 1. Les colonnes sont créées en spécifiant le nombre de douze colonnes. Par exemple, trois colonnes égales utiliseraient trois `.col-xs-4`.
-1. Les classes  s'appliquent aux périphériques avec des largeurs d'écran supérieures ou égales aux tailles des breakpoints et remplacent les classes ciblées sur les périphériques plus petits.\\
+1. Les classes  s'appliquent aux périphériques avec des largeurs d'écran supérieures ou égales aux tailles des breakpoints et remplacent les classes ciblées sur les périphériques plus petits.  
 Par conséquent, l'application de n'importe quelle classe `.col-md-*` à un élément n'affectera pas seulement son style sur les appareils de taille moyenne, mais aussi sur les gros appareils si une classe `.col-lg-*` n'est pas présente.
 
 ```html

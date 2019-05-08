@@ -12,7 +12,7 @@ Présenation de l'éditeur de texte [CKeditor 4](https://ckeditor.com/){:rel="ex
 
 C'est également l'éditeur de texte utilisé par Drupal.
 
-La feuille de style CSS est la suivante : `base-editor.min.css`.\\
+La feuille de style CSS est la suivante : `base-editor.min.css`.  
 Inclut les CSS de debug pour le système de grille Bootstrap.
 
 <textarea name="editor1" row="40"></textarea>

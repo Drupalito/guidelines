@@ -45,7 +45,7 @@ La déclaration d'encodage est obligatoire. Elle évite le risque de problèmes 
 
 Utiliser `<link rel="stylesheet" href="screen-base.min.css"/>` entre les balises `<head/>`.
 
-**Nous essayons de limiter le nombre de feuilles de style à 3.**\\
+**Nous essayons de limiter le nombre de feuilles de style à 3.**  
 Pour chaque feuille de style, le navigateur fait une requête HTTP, et bloque le rendu de la page jusqu'à ce que tout le CSS arrive.
 
 Des styles en lignes peuvent être utilisés pour gérer des couleurs de thème ou des préférences utilisateurs.

@@ -15,7 +15,7 @@ Utiliser des éléments `HTML` appropriés pour marquer le contenu.
   </div>
 </div>
 
-Utiliser les éléments `h1`, `h2`, `h3` pour symboliser les titres et la structure générale du document.\\
+Utiliser les éléments `h1`, `h2`, `h3` pour symboliser les titres et la structure générale du document.  
 **La structure des titres doit être cohérente.**
 
 **Chaque page doit contenir un seul titre `h1`.**

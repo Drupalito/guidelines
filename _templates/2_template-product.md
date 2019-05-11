@@ -12,12 +12,12 @@ demo: true
   <div class="summary">
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-3">
-        <figure class="summary_capture mtn">
+        <figure class="summary_capture mt-0">
           <img class="summary_image" src="http://placehold.it/231x288" alt="" />
         </figure>
       </div>
       <div class="col-xs-12 col-sm-8 col-md-9">
-        <h2 class="summary_title h3 caps mtn">Summary Headline</h2>
+        <h2 class="summary_title h3 caps mt-0">Summary Headline</h2>
         <p class="summary_desciption h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perspiciatis numquam accusantium id obcaecati perferendis repellat officiis nobis dicta odit nemo praesentium repudiandae, illo culpa, distinctio ut ad placeat quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
         <div class="promo mbl">

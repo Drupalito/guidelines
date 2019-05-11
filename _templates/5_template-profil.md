@@ -21,8 +21,8 @@ weight: 5
                 <img class="profil__image" src="http://placehold.it/231x288" alt="" />
               </div>
               <div class="col-xs-12 col-sm-8">
-                <h1 class="profil__title default-color mvn"><span class="caps">{{ site.OWNER_CONTACT }}</span> <small>(johndoe)</small></h1>
-                <p class="profil__citation mtn"><q>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</q></p>
+                <h1 class="profil__title default-color my-0"><span class="caps">{{ site.OWNER_CONTACT }}</span> <small>(johndoe)</small></h1>
+                <p class="profil__citation mt-0"><q>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</q></p>
 
                 <ul class="profil__list list-none">
                   <li><span class="fa fa-user prs" aria-hidden="true"></span> Homme</li>

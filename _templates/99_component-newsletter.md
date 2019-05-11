@@ -12,7 +12,7 @@ demo: true
 
 ```html
   <div class="block__content">
-    <p class="mbn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
+    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
     <form class="simplenews" action="#" method="post">
       <div>
         <input placeholder="Votre adresse email" title="Entrer votre adresse email" type="email" name="mail" value="" size="20" maxlength="128" class="form-text required"><button class="btn btn--submit" name="op" value="Envoyer">Envoyer</button>
@@ -22,7 +22,7 @@ demo: true
 ```
 
 <div class="block__content">
-  <p class="mbn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
   <form class="simplenews" action="#" method="post">
     <div>
       <input placeholder="Votre adresse email" title="Entrer votre adresse email" type="email" name="mail" value="" size="20" maxlength="128" class="form-text required"><button class="btn btn--submit" name="op" value="Envoyer">Envoyer</button>
@@ -34,7 +34,7 @@ demo: true
 
 ```html
   <div class="block__content">
-    <p class="mbn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
+    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
     <form class="simplenews" action="#" method="post">
       <div>
         <input placeholder="Votre adresse email" title="Entrer votre adresse email" type="email" name="mail" value="" size="20" maxlength="128" class="form-text required"><button class="btn btn--icon btn--submit" name="op" value="Envoyer"><span aria-hidden='true' class='fa fa-envelope'></span> Envoyer</button>
@@ -44,7 +44,7 @@ demo: true
 ```
 
 <div class="block__content">
-  <p class="mbn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta.</p>
   <form class="simplenews" action="#" method="post">
     <div>
       <input placeholder="Votre adresse email" title="Entrer votre adresse email" type="email" name="mail" value="" size="20" maxlength="128" class="form-text required"><button class="btn btn--icon btn--submit" name="op" value="Envoyer"><span aria-hidden='true' class='fa fa-envelope'></span> Envoyer</button>

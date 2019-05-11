@@ -44,35 +44,35 @@ weight: 0
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <div class="{{ font_color[0] | downcase }}-background clipboard-copy" style="height:100px;" data-color-copy="{{ font_color[1] }}"><div class="copy bold">Cliquer pour copier</div></div>
-      <p class="mtm mbn"><strong>{{ font_color[0] | downcase }}</strong></p>
-      <p class="mtn mbm"><small><strong>scss:</strong> <code>coloriz({{ font_color[0] | downcase }}, base)</code></small></p>
+      <p class="mtm mb-0"><strong>{{ font_color[0] | downcase }}</strong></p>
+      <p class="mt-0 mbm"><small><strong>scss:</strong> <code>coloriz({{ font_color[0] | downcase }}, base)</code></small></p>
       <p class="mvm">HEX: {{ font_color[1] }}<br/>RGB: {{ font_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
     </div>
     <div class="col-xs-12 col-sm-8">
       <div class="row row-sm-noborder">
         <div class="col-xs-12 col-sm-4">
           <div class="{{ font_color[0] | downcase }}-background--dark" style="height:40px;"></div>
-          <p class="bold mtm mbn"><small><code>coloriz({{ font_color[0] | downcase }}, dark)</code></small></p>
-          <p class="mtn mbm"><small>darken 15%</small></p>
-          <p class="mtn mbn"><small><strong>class css:</strong></small></p>
-          <p class="mtn mbn"><small>.{{ font_color[0] | downcase }}-background--dark</small></p>
-          <p class="mtn mbn"><small>.{{ font_color[0] | downcase }}-color--dark</small></p>
+          <p class="bold mtm mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, dark)</code></small></p>
+          <p class="mt-0 mbm"><small>darken 15%</small></p>
+          <p class="mt-0 mb-0"><small><strong>class css:</strong></small></p>
+          <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-background--dark</small></p>
+          <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-color--dark</small></p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="{{ font_color[0] | downcase }}-background--light" style="height:40px;"></div>
-          <p class="bold mtm mbn"><small><code>coloriz({{ font_color[0] | downcase }}, light)</code></small></p>
-          <p class="mtn mbm"><small>lighten 15%</small></p>
-          <p class="mtn mbn"><small><strong>class css:</strong></small></p>
-          <p class="mtn mbn"><small>.{{ font_color[0] | downcase }}-background--light</small></p>
-          <p class="mtn mbn"><small>.{{ font_color[0] | downcase }}-color--light</small></p>
+          <p class="bold mtm mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, light)</code></small></p>
+          <p class="mt-0 mbm"><small>lighten 15%</small></p>
+          <p class="mt-0 mb-0"><small><strong>class css:</strong></small></p>
+          <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-background--light</small></p>
+          <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-color--light</small></p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="{{ font_color[0] | downcase }}-background--lighter" style="height:40px;"></div>
-          <p class="bold mtm mbn"><small><code>coloriz({{ font_color[0] | downcase }}, lighter)</code></small></p>
-          <p class="mtn mbm"><small>lighten 45%</small></p>
-          <p class="mtn mbn"><small><strong>class css:</strong></small></p>
-          <p class="mtn mbn"><small>.{{ font_color[0] | downcase }}-background--lighter</small></p>
-          <p class="mtn mbn"><small>.{{ font_color[0] | downcase }}-color--lighter</small></p>
+          <p class="bold mtm mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, lighter)</code></small></p>
+          <p class="mt-0 mbm"><small>lighten 45%</small></p>
+          <p class="mt-0 mb-0"><small><strong>class css:</strong></small></p>
+          <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-background--lighter</small></p>
+          <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-color--lighter</small></p>
         </div>
       </div>
     </div>

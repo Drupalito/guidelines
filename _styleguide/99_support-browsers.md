@@ -39,7 +39,7 @@ Le tableau répertorie les versions pour lesquelles le framework est testé. "La
     <div style="height:50px;width:50px;" class="ml-auto mr-auto">
       <img width="50" height="50" src="../assets/images/browsers/{{ browser.icon }}.svg" alt="">
     </div>
-    <p class="mvn">
+    <p class="my-0">
       <strong>{{ browser.title }}</strong><br/>
       <small>{{ browser.version }}</small>
     </p>

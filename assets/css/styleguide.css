@@ -1,7 +1,7 @@
 
 .styleguide {
   background: #fff;
-  padding: 1.5em;
+  padding: 1.5em 1.5em 0;
   border: 1px solid #D6D7D9;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -19,6 +19,12 @@
 .styleguide__title {
   margin-bottom: 0;
 }
+.styleguide__content {
+  padding-bottom: 1.5em;
+}
+.styleguide__demo {
+  padding: 1.5em 0;
+}
 .styleguide__demo .hero,
 .styleguide__demo .fullscreen {
   height: 500px;
@@ -28,13 +34,16 @@
 .copy--notes,
 .copy--versionning {
   background: #F1F1F1;
-  margin: 1.5em -1.5em -1.5em;
+  margin: 0 -1.5em;
   padding: 1em;
   border-top: 1px solid #D6D7D9;
 }
 .copy--notes ol,
 .copy--versionning ul {
   font-size: 80%;
+}
+.copy--versionning {
+  padding: .25em 1em;
 }
 
 #markdown-toc ul {
@@ -184,7 +193,7 @@
 div.highlighter-rouge {
   background: #272822;
   padding: 1.25em 1em 1.25em 0;
-  margin: 1.5em -1.5em;
+  margin: 1.5em -1.5em 0;
   max-height: 400px;
   overflow-y: scroll;
 }
@@ -192,7 +201,6 @@ div.highlighter-rouge {
   background: transparent;
   border: 0;
   border-radius: 0;
-  font-size: 85%;
 }
 .highlighter-rouge .highlight,
 .highlighter-rouge .highlight code {
@@ -201,9 +209,23 @@ div.highlighter-rouge {
   color: #f8f8f2;
   border: 0;
   border-radius: 0;
-  font-size: 85%;
 }
-
+.highlight .rouge-table td {
+  border-bottom: 0;
+  padding-left: 5px;
+  color: #f8f8f2;
+}
+.highlight .rouge-table .rouge-gutter {
+  text-align: right;
+  padding: 0 5px;
+  width: 25px;
+}
+.highlight .rouge-table tbody {
+  border: 0;
+}
+.highlight .rouge-table tr {
+  background: transparent;
+}
 .highlighter-rouge .highlight .hll {
   background-color: #49483e;
 }

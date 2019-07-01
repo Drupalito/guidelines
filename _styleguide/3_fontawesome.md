@@ -791,12 +791,11 @@ icons:
   - superpowers
   - wpexplorer
   - meetup
-  - </div>
 ---
 
 <div class="styleguide">
   <p>
-    <strong><a href="http://fontawesome.io/icons" target="_blank">Fontawesome 4.7.0</a> est la librairie pour la font icone.</strong> Les îcones sont invoqués séparément. Nous utilisons des SVG pour ces icônes.
+    <strong><a href="http://fontawesome.io/icons" target="_blank">Fontawesome 4.7.0</a> est la librairie pour la font icone.</strong><br/>Les îcones sont invoqués séparément. Nous utilisons des SVG pour ces icônes.
   </p>
   <p>
     Ils sont inclus individuellement comme images d'arrière-plan. Ils ne s'affichent pas dans un navigateur qui ne prend pas en charge la taille de l'arrière-plan.

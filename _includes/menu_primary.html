@@ -40,9 +40,9 @@
               {% if currentcategory != category %}
 
                 {% if page.category == currentcategory %}
-                  <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}.html">{{ currentcategory }}</a></li>
+                  <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}">{{ currentcategory }}</a></li>
                 {% else %}
-                  <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}.html">{{ currentcategory }}</a></li>
+                  <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}">{{ currentcategory }}</a></li>
                 {% endif %}
 
                 {% assign category = currentcategory %}

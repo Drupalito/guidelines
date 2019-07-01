@@ -48,9 +48,9 @@
                         {% for item in items %}
                           {% if page.category == item.category %}
                             {% if page.url == item.url %}
-                              <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}.html"><span class="bold">{{ item.title }}</span></a></li>
+                              <li class="menu__item"><a class="menu__link active" href="{{ item.url | prepend: basePath }}"><span class="bold">{{ item.title }}</span></a></li>
                             {% else %}
-                              <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}.html"><span>{{ item.title }}</span></a></li>
+                              <li class="menu__item"><a class="menu__link" href="{{ item.url | prepend: basePath }}"><span>{{ item.title }}</span></a></li>
                             {% endif %}
                           {% endif %}
                         {% endfor %}

@@ -39,13 +39,13 @@ Commentaire sur une seule ligne
 
 ## Commentaire Twig
 
-```html
+```twig
   {# Mon Commentaire #}
 ```
 
 ## Commentaire Jekyll
 
-```html
+```liquid
   {% raw  %}{% comment %}
       Mon comentaire
   {% endcomment %}{% endraw  %}

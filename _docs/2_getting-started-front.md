@@ -12,7 +12,7 @@ weight: 2
 
 ## Organisation des fichiers `source`
 
-```bash
+```sh
 source/
 ├── fonts/
 ├── images/
@@ -49,20 +49,20 @@ Au préalable, vous devez avoir:
 * GULP
 * Sass 3.4.23 Ruby
 
-```bash
+```sh
   git clone git@github.com:Drupalito/gulp_tasks.git {{ dirfolder }}site/
   rm -rf {{ dirfolder }}site/.git
 ```
 
 Maintenant, il faut installer les dépendances.
 
-```bash
+```sh
   cd {{ dirfolder }}site/
   npm install
 ```
 
 Ok, les fichiers sont en place.
-Il reste à modifier `config.yml` comme si dessous... [vérifier les `path.dist` et `path.src`]
+Il reste à modifier le fichier `config.yml` comme si dessous... [vérifier les `path.dist` et `path.src`]
 
 ```yaml
 # Fichier : site/config.yml

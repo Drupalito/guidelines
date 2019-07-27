@@ -16,7 +16,7 @@ Le projet a été monté de la façon suivante :
 
 ### Organisation du projet
 
-```bash
+```sh
 {{ site.DIR }}/
 ├── docs/
 ├── reports/
@@ -45,13 +45,13 @@ Le projet a été monté de la façon suivante :
 {% if site.REPO != 0 %}
 Cloner le repo
 
-```shell
+```sh
   git clone {{ site.REPO }} {{ instance }}
 ```
 
 Vérifier si il y a une branch `develop` ou un autre nom.
 
-```shell
+```sh
   git branch -a
   git checkout origin/develop
   git checkout -b develop origin/develop
@@ -59,7 +59,7 @@ Vérifier si il y a une branch `develop` ou un autre nom.
 ```
 
 {% else %}
-```shell
+```sh
   # Aucune information d'installation
 ```
 {% endif %}

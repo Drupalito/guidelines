@@ -29,7 +29,7 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
     <div class="col-xs-12 col-sm-3 text-sm-right">
       <p class="size-8x">Aa</p>
     </div>
-    <div class="col-xs-12 col-sm-9 col-bottom">
+    <div class="col-xs-12 col-sm-9">
       <div data-specimen="lorem">
         <span class="caps">
           ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>ÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ
@@ -51,7 +51,7 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
     <div class="col-xs-12 col-sm-3 text-sm-right">
       <p class="size-8x">Aa</p>
     </div>
-    <div class="col-xs-12 col-sm-9 col-bottom">
+    <div class="col-xs-12 col-sm-9">
     <div data-specimen="lorem">
       <span class="caps">
         ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>ÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ
@@ -73,7 +73,7 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
     <div class="col-xs-12 col-sm-3 text-sm-right">
       <p class="size-8x">Aa</p>
     </div>
-    <div class="col-xs-12 col-sm-9 col-bottom">
+    <div class="col-xs-12 col-sm-9">
     <div data-specimen="lorem">
       <span class="caps">
         ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>ÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ
@@ -95,7 +95,7 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
     <div class="col-xs-12 col-sm-3 text-sm-right">
       <p class="size-8x">Aa</p>
     </div>
-    <div class="col-xs-12 col-sm-9 col-bottom">
+    <div class="col-xs-12 col-sm-9">
     <div data-specimen="lorem">
       <span class="caps">
         ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>ÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŸ

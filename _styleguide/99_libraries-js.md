@@ -37,4 +37,8 @@ Cet attribut `rel="external"` permet l'ouverture d'un lien dans une nouvelle fen
 
 [Voir script JS](https://codepen.io/aquelito/pen/VbVwqG){:rel="external"}
 
+```html
+  <a rel="external" href="https://google.fr">Google rel-external</a>
+```
+
 * [RGAA - Critère 13.2 [A] Dans chaque page web, pour chaque ouverture de nouvelle fenêtre, l'utilisateur est-il averti ?) ?](https://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html#crit-13-2){:rel="external"}

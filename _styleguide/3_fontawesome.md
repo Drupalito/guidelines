@@ -793,18 +793,20 @@ icons:
   - meetup
 ---
 
-<div class="styleguide">
+<div class="styleguide pb-4">
   <p>
     <strong><a href="http://fontawesome.io/icons" target="_blank">Fontawesome 4.7.0</a> est la librairie pour la font icone.</strong><br/>Les îcones sont invoqués séparément. Nous utilisons des SVG pour ces icônes.
   </p>
   <p>
     Ils sont inclus individuellement comme images d'arrière-plan. Ils ne s'affichent pas dans un navigateur qui ne prend pas en charge la taille de l'arrière-plan.
   </p>
+
   <p>
     Exemple d'utilisation:<br/>
     <code>&lt;span class="fa fa-cog" aria-hidden="true"&gt;&lt;/span&gt;</code>
   </p>
 </div>
+
 
 <div class="row row-sm-eqheight">
   {% for icon in page.icons %}

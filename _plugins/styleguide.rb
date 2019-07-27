@@ -26,6 +26,9 @@ module Jekyll
     REGEX_CODE      = /```([a-z].*?)\n([\s\S]*?)\n```/m
     REGEX_INTERCODE = /\*\/((.*?)\n[\s\S]*?)\/\*?(doc|end)/m
 
+    REGEX_EXEMPLES = /<!-- examples -->([\s\S]*?)<!-- \/examples -->/m
+    REGEX_EXEMPLES_SOLO = /<!-- exampleFor: \"([\w\s,+\a-zA-ZéèÉÈ]+?)\" -->([\s\S]*?)<!-- \/exampleFor -->/m
+
     def read_file(file_name)
       file = File.open(file_name, "r")
       data = file.read
@@ -57,34 +60,38 @@ module Jekyll
       hasPalette = ""
 
       demos = []
-      if REGEX_CODE.match(commentMarkdown)
-        commentCode = REGEX_CODE.match(commentMarkdown)
-        commentAllCode = commentMarkdown.scan(REGEX_CODE)
-        puts commentAllCode.count
+      
+      if REGEX_EXEMPLES.match(commentMarkdown)
+        # commentExamples = REGEX_EXEMPLES.match(commentMarkdown)
+        commentExamplesAll = commentMarkdown.scan(REGEX_EXEMPLES)
 
-        commentAllCode.each_with_index do |code, index|
-          codeSettings = code[0].split(' "')
-          demoRender = (code[1].strip.gsub(/^[ \t]{2}/m,''))
-          snippetRender = "```#{codeSettings[0]}\n#{demoRender}\n```"
-        
-          demos.push(
-            :title => codeSettings[1] ? codeSettings[1].gsub('"', '') : "",
-            :syntax_lang => codeSettings[0],
-            :snippet => snippetRender,
-            :demo => demoRender,
-          )
-          
-          commentMarkdown = commentMarkdown.sub(REGEX_CODE, '')
-         end
+        commentExamplesAll.each_with_index do |code, index|
 
-        # codeLang = commentCode[1].strip.split(' ')
+          if REGEX_EXEMPLES_SOLO.match(code[0])
+            # commentCode = REGEX_EXEMPLES_SOLO.match(code[0])
+            commentAllCode = code[0].scan(REGEX_EXEMPLES_SOLO)
+           
+            commentAllCode.each_with_index do |code2, i|
+              title = code2[0]
+              splitCodeRender = code2[1].scan(REGEX_CODE)
+              language = splitCodeRender[0][0]
+              descriptionRender = code2[1].strip.gsub(REGEX_CODE,'')
+              demoRender = splitCodeRender[0][1]
+              snippetRender = (code2[1].strip.gsub(/^[ \t]{2}/m,''))
 
-        # hasDemo = codeLang.include?('demo')
-        # hasPalette = codeLang.include?('colorz') 
-        
-        # demoRender = (commentCode[2].strip.gsub(/^[ \t]{2}/m,''))
-        # snippetRender = "```#{codeLang[0]}\n#{demoRender}\n```"
-        # commentMarkdown = commentMarkdown.sub(commentCode[0], '')
+              demos.push(
+                :title => title ? title : "",
+                :description => descriptionRender,
+                :syntax_lang => language,
+                :snippet => snippetRender,
+                :demo => demoRender,
+              )
+
+            end 
+          end
+        end
+
+        commentMarkdown = commentMarkdown.sub(REGEX_EXEMPLES, '')
       end
 
       data = YAML::load(commentMeta[1])
@@ -101,7 +108,6 @@ module Jekyll
         # :hasDemo => hasDemo,
         # :hasPalette => hasPalette
       )
-
       return output;
     end
 
@@ -199,9 +205,8 @@ module Jekyll
       output = ""
       data.each do |block|
         extract_body = REGEX_HEADER.match(block[:original])
-        fi = block[:description].sub(extract_body[0], '')
+        fi = block[:description].sub(extract_body[0], '').strip!
         
-
         if brick == 'modules'
           scssSrc = site.config['PATH_TO_SOURCE'] + '/scss'
           output += "<link href='../assets/corecss#{file.gsub(scssSrc, '').gsub('.scss', '.css')}' rel='stylesheet' />"
@@ -212,15 +217,17 @@ module Jekyll
         output += "  <div class='styleguide__header'>"
         output += "    <h2 class='styleguide__title'>" + converter.convert(block[:title]).gsub('<p>', '').gsub('</p>', '').strip + "</h2>"
         output += "  </div>"
-        output += "  <div class='styleguide__content'>"
-        output += converter.convert(fi)
-        output += "  </div>"
+        if fi != ""
+          output += "  <div class='styleguide__content'>"
+          output += converter.convert(fi)
+          output += "  </div>"
+        end
 
-        if block[:demos]
+        if block[:demos].count >= 1
           output += "<div class='styleguide__demos'>"
           if block[:demos].count >= 2
             output += "<div class='styleguide__examples'>"
-            output += "<ul class='nav nav-tabs'><li class='nav-item dropdown'><a class='nav-link dropdown-toggle active' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>Exemples</a><div class='dropdown-menu'>"
+            output += "<ul class='nav nav-tabs'><li class='nav-item dropdown'><a class='nav-link dropdown-toggle active' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>#{block[:demos].count} Exemples</a><div class='dropdown-menu'>"
             randExamples = generate_code(6)
             block[:demos].each_with_index do |demo, index|
               isActive = index == 0 ? 'active show' : nil
@@ -230,54 +237,59 @@ module Jekyll
             output += "</div></li></ul>"
             output += "</div>"
           end
-          output += "<div class='styleguide__oneup'>"
-          output += "<div class='tab-content'>"
-          block[:demos].each_with_index do |demo, index|
-            randNumber = generate_code(5)
-            isActive = index == 0 ? 'active show' : nil
-            output += "<div class='tab-pane #{isActive}' id='#{randExamples}--#{index}'>"
-  
-            if demo[:snippet] && demo[:demo]
-              # TABS
-              output += ''
-              output += '<ul class="nav nav-tabs" role="tablist">'
-              if block[:demos].count >= 2
-                output += '  <li class="nav-item">'
-                output += '    <span class="nav-link disabled">'+ demo[:title] +'</a>'
-                output += '  </li>'
-              end
-              if demo[:demo]
-                output += '  <li class="nav-item">'
-                output += '    <a class="nav-link active show" href="#demo-'+ randNumber +'" role="tab" data-toggle="tab" aria-toggle="tab" aria-selected="true">Démo</a>'
-                output += '  </li>'
-              end
-              if demo[:snippet] != "" && demo[:demo]
-                output += '  <li class="nav-item">'
-                output += '    <a class="nav-link" href="#snippet-'+ randNumber +'" role="tab" data-toggle="tab" aria-toggle="tab" aria-selected="false">Snippet</a>'
-                output += '  </li>'
-              end
-              output += '</ul>'
-              
-              output += '<div class="tab-content">'
-              if demo[:demo]
-                output += '  <div role="tabpanel" class="tab-pane fade show active" id="demo-'+ randNumber +'">'
-                output += "    <div class='styleguide__demo'>"
-                output += converter.convert(demo[:demo])
-                output += "    </div>"
-                output += '  </div>'
-              end
-              if demo[:snippet]
-                output += '  <div role="tabpanel" class="tab-pane fade" id="snippet-'+ randNumber +'">'
-                output += "    <div class='styleguide__snippet'>"
-                output += converter.convert(demo[:snippet])
-                output += "    </div>"
-                output += '  </div>'
+          if block[:demos].count >= 1
+            output += "<div class='styleguide__oneup'>"
+            output += "<div class='tab-content'>"
+            block[:demos].each_with_index do |demo, index|
+              randNumber = generate_code(5)
+              isActive = index == 0 ? 'active show' : nil
+              output += "<div class='tab-pane #{isActive}' id='#{randExamples}--#{index}'>"
+    
+              if demo[:snippet] && demo[:demo]
+                # TABS
+                output += ''
+                if block[:demos].count >= 2
+                  output += '<p class="bold">'+ demo[:title] +'</p>'
+                end
+                if demo[:description]
+                  output += converter.convert(demo[:description])
+                end
+                output += '<ul class="nav nav-tabs" role="tablist">'
+                if demo[:demo]
+                  output += '  <li class="nav-item">'
+                  output += '    <a class="nav-link active show" href="#demo-'+ randNumber +'" role="tab" data-toggle="tab" aria-toggle="tab" aria-selected="true">Démo</a>'
+                  output += '  </li>'
+                end
+                if demo[:snippet] != "" && demo[:demo]
+                  output += '  <li class="nav-item">'
+                  output += '    <a class="nav-link" href="#snippet-'+ randNumber +'" role="tab" data-toggle="tab" aria-toggle="tab" aria-selected="false">Snippet</a>'
+                  output += '  </li>'
+                end
+                output += '</ul>'
+                
+                if (demo[:demo] or demo[:snippet])
+                  output += '<div class="tab-content">'
+                  if demo[:demo]
+                    output += '  <div role="tabpanel" class="tab-pane fade show active" id="demo-'+ randNumber +'">'
+                    output += "    <div class='styleguide__demo'>"
+                    output += converter.convert(demo[:demo])
+                    output += "    </div>"
+                    output += '  </div>'
+                  end
+                  if demo[:snippet]
+                    output += '  <div role="tabpanel" class="tab-pane fade" id="snippet-'+ randNumber +'">'
+                    output += "    <div class='styleguide__snippet'>"
+                    output += converter.convert(demo[:snippet])
+                    output += "    </div>"
+                    output += '  </div>'
+                  end
+                  output += '</div>'
+                end
               end
               output += '</div>'
             end
-            output += '</div>'
+            output += "</div></div>"
           end
-          output += "</div></div>"
           output += "</div>"
         end
 

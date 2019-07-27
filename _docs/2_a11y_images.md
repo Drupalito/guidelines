@@ -11,14 +11,14 @@ weight: 1
 
 Aucun attribut `alt`.
 
-```
+```html
 # Fail
 <img src="[URL_IMAGE]">
 ```
 
 Si il s'agit d'**une image décorative** alors l'attribut `alt` doit être vide.
 
-```
+```html
 # Fail
 <img src="[URL_IMAGE]" alt="Ceci est la description de mon image">
 ```
@@ -30,7 +30,7 @@ L'attribut `title` est présente.
 
 [RGAA: note sur les alternatives d'images](https://references.modernisation.gouv.fr/rgaa-accessibilite/glossaire.html#alternative-textuelle-image)
 
-```
+```html
 # Good
 <img src="[URL_IMAGE]" alt="">
 

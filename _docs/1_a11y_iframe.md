@@ -11,14 +11,14 @@ weight: 1
 
 Aucun attribut `title`.
 
-```
+```html
 # Fail
 <iframe src="../iframeform/"></iframe>
 ```
 
 L'attribut `name` ne peut pas faire office d'attribut `titre`.
 
-```
+```html
 # Fail
 <iframe src="../iframeform/" name="Page title displayed by the iframe"></iframe>
 ```
@@ -30,7 +30,7 @@ L'attribut `title` est présente.
 
 [RGAA: note sur les titres de cadres](https://references.modernisation.gouv.fr/rgaa-accessibilite/glossaire.html#titre-de-cadre)
 
-```
+```html
 # Good
 <iframe src="../iframeform/" title="Page title displayed by the iframe"></iframe>
 
@@ -38,7 +38,7 @@ L'attribut `title` est présente.
 <iframe src="../iframeform/" title="Contenu technique Facebook"></iframe>
 
 # Good
-<iframe src="../iframeform/" aria-hidden="true">Page title displayed by the iframe"></iframe>
+<iframe src="../iframeform/" aria-hidden="true"></iframe>
 ```
 
 ## Critères de validation

@@ -85,6 +85,10 @@ td pre {
   font-size: 90%;
 }
 
+.page-secondary ul.primary a {
+  line-height: 3.75em;
+}
+
 .fa--round {
   width: 2em;
   height: 2em;

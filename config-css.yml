@@ -13,8 +13,8 @@ BODY_BACKGROUND: "#fff"
 BODY_COLOR: "#333"
 # Font stack.
 FONT_FAMILIES:
-  BODY:     "'Open Sans', Helvetica, Arial, sans-serif"
-  HEADLINE: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  BODY:     "'Open Sans', 'Helvetica Neue', Arial, sans-serif"
+  HEADLINE: "'Open Sans', 'Helvetica Neue', Arial, sans-serif"
   PRE:      "Menlo, Monaco, Consolas, 'Courier New', monospace"
   PRINT:    "'Helvetica Neue', Helvetica, Arial, sans-serif"
 # Heading Font Size

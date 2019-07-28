@@ -8,6 +8,11 @@ weight: 2
 demo: true
 ---
 
+<!-- examples -->
+
+<!-- exampleFor: "Page produit" -->
+
+```html
 <div>
   <div class="summary">
     <div class="row">
@@ -19,7 +24,6 @@ demo: true
       <div class="col-xs-12 col-sm-8 col-md-9">
         <h2 class="summary_title h3 caps mt-0">Summary Headline</h2>
         <p class="summary_desciption h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perspiciatis numquam accusantium id obcaecati perferendis repellat officiis nobis dicta odit nemo praesentium repudiandae, illo culpa, distinctio ut ad placeat quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
         <div class="promo mbl">
           <div id="search" class="search">
             <form class="search__form" role="search" action="/" method="post" id="search-form">
@@ -31,7 +35,6 @@ demo: true
     </div>
   </div>
 </div>
-
 <div class="fields">
   <div class="row row-eq-height">
     <div class="col-xs-12 col-sm-4 mbl">
@@ -69,7 +72,6 @@ demo: true
     </div>
   </div>
 </div>
-
 <div class="fields">
   <div class="row">
     <div class="col-xs-12 col-sm-8 mbl">
@@ -79,7 +81,6 @@ demo: true
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-
     <div class="col-xs-12 col-sm-4">
       <div class="block block--views block--first">
         <p class="block__title">Got a Great Idea?</p>
@@ -88,7 +89,6 @@ demo: true
           <p class='mtm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">My links</a>.</p>
         </div>
       </div>
-
       <div class="block block--views block--last">
         <p class="block__title">July Cleanup</p>
         <img alt="" src="http://placehold.it/304x96" />
@@ -99,3 +99,8 @@ demo: true
     </div>
   </div>
 </div>
+```
+
+<!-- /exampleFor -->
+
+<!-- /examples -->

@@ -17,10 +17,10 @@ Le projet a été monté de la façon suivante :
 ### Organisation du projet
 
 ```sh
-{{ site.DIR }}/
-├── docs/
-├── reports/
-└── site/
+/{{ site.DIR }}
+├── /docs
+├── /reports
+└── /site
     ├── .csscomb.json
     ├── .editorconfig
     ├── .scss-lint.yml
@@ -28,17 +28,17 @@ Le projet a été monté de la façon suivante :
     ├── README.md
     ├── **config.yml** # fichier de configuration**
     ├── gulpfile.js
-    ├── node_modules/
+    ├── /node_modules
     ├── package.json
-    ├── tasks/
-    └── www/
+    ├── /tasks
+    └── /www
         ├── CMS Files (drupal / wordpress)
-        └── **source/ (contient SCSS / Images / JS / Fonts / Libraries**
+        └── **/source (contient SCSS / Images / JS / Fonts / Libraries**
 ```
 
-* **site/** : Contient le site (`www/`). Les autres fichiers concernent le fonctionnement des tâches automatiques GULP.
+* **site/** : Contient le site (`/www`). Les autres fichiers concernent le fonctionnement des tâches automatiques GULP.
 
-* **www/** : Contient les fichiers du site (CMS / Static / Jekyll). Ainsi que le dossier `source/`.
+* **www/** : Contient les fichiers du site (CMS / Static / Jekyll). Ainsi que le dossier `/source`.
 
 ## Installation
 

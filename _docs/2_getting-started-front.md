@@ -10,23 +10,23 @@ weight: 2
 {% capture dirfolder %}{{ site.ROOT }}/{{ site.OWNER_NAME }}/{{ site.DIR }}/{% endcapture %}
 {% capture instance %}{{ dirfolder }}site/www/{% endcapture %}
 
-## Organisation des fichiers `source`
+## Organisation des fichiers `/source`
 
 ```sh
-source/
-├── fonts/
-├── images/
-├── js/
-├── libraries/
-└── scss/
-    ├── base/
-    ├── components/
-    ├── helpers/
-    ├── modules/
-    └── themes/
+/source
+├── /fonts
+├── /images
+├── /js
+├── /libraries
+└── /scss
+    ├── /base
+    ├── /components
+    ├── /helpers
+    ├── /modules
+    └── /themes
 ```
 
-Le dossier `scss/` est divisé en plusieurs dossiers.
+Le dossier `/scss` est divisé en plusieurs dossiers.
 
 <dl>
   <dt>Base</dt>
@@ -41,7 +41,7 @@ Le dossier `scss/` est divisé en plusieurs dossiers.
 
 ## Compilation
 
-Afin de complier le dossier `source/` vous devra installer les fichiers de tâches GULP.
+Afin de complier le dossier `/source` vous devra installer les fichiers de tâches GULP.
 Pour cela télécharger le package GULP.
 
 Au préalable, vous devez avoir:
@@ -115,9 +115,9 @@ Utilisation: `gulp nom_de_la_tache --prod`.
 
 | Tâche   | Description
 |---------|------------
-| **clean** | Supprime les dossiers contruits: `css`, `js`, `fonts`, `images` et `libraries`.<br/>**À utiliser si on est sur :D**
-| **fonts** | Copie le dossier `source/fonts`.
-| **libraries** | Copie le dossier `source/libraries`.
-| **images** | Copie le dossier `source/images`<br/>Optimise les images png, jpg et svg.
-| **scripts** | Compile les fichiers `source/js`.
-| **styles** | Compile les fichiers Scss `source/scss`.<br/>Utilise `autoprefixer`.
+| **clean** | Supprime les dossiers contruits: `/css`, `/js`, `/fonts`, `/images` et `/libraries`.<br/>**À utiliser si on est sur :D**
+| **fonts** | Copie le dossier `/source/fonts`.
+| **libraries** | Copie le dossier `/source/libraries`.
+| **images** | Copie le dossier `/source/images`<br/>Optimise les images png, jpg et svg.
+| **scripts** | Compile les fichiers `/source/js`.
+| **styles** | Compile les fichiers Scss `/source/scss`.<br/>Utilise `autoprefixer`.

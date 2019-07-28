@@ -8,7 +8,7 @@ weight: 99
 
 ##  Libraries
 
-Liste des librairies jQuery utilisées régulièrement sur les thémes.
+Liste des librairies jQuery, régulièrement utilisées sur les thémes.
 
 * [jQuery](https://jquery.com/){:rel="external"}
 * [Animation JS CSS WOW](http://mynameismatthieu.com/WOW/){:rel="external"}

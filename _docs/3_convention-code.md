@@ -6,6 +6,8 @@ category: "Les normes de conception fournissent des lignes directrices et un cod
 weight: 3
 ---
 
+{% capture dirfolder %}/{{ site.DIR }}/{% endcapture %}
+
 Ce document doit permettre d'uniformiser la production de code, à l'aide de différentes conventions.
 
 Le but est de disposer d'un code maintenable sur l'ensembles des projets et que n'importe quel projet soit accessible à n'importe quel intervenant connaissant ces conventions.
@@ -15,7 +17,7 @@ Le but est de disposer d'un code maintenable sur l'ensembles des projets et que 
 ## Indentation
 
 * **Ne jamais mélanger espaces et tabulations** (configurer son éditeur) ;
-* Privilégier les espaces aussi sur Drupal : **2 espaces en CSS, HTML et CSS**.
+* Privilégier les espaces : **2 espaces en CSS, HTML, JS et PHP**.
 
 Le fichier `.editorconfig` contient les options requises. Plus d'informations sur [editorconfig.org](http://editorconfig.org){:target="_blank"}.
 
@@ -29,8 +31,8 @@ Le fichier `.editorconfig` contient les options requises. Plus d'informations su
 
 Ce que le fichier `.editorconfig` doit contenir :
 
-``` bash
-# .editorconfig
+```bash
+# {{ dirfolder }}site/.editorconfig
 # editorconfig.org
 # Install EditorConfig with Package Control and restart Sublime
 

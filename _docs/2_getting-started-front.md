@@ -13,51 +13,56 @@ weight: 2
 ## Organisation des fichiers `/source`
 
 ```sh
-/source
-├── /fonts
-├── /images
-├── /js
-├── /libraries
-└── /scss
-    ├── /base
-    ├── /components
-    ├── /helpers
-    ├── /modules
-    └── /themes
+🗂 /source
+├── 🗂 /fonts
+├── 🗂 /images
+├── 🗂 /js
+├── 🗂 /libraries
+└── 🗂 /scss
+    ├── 🗂 /base
+    ├── 🗂 /components
+    ├── 🗂 /helpers
+    ├── 🗂 /modules
+    └── 🗂 /themes
 ```
 
 Le dossier `/scss` est divisé en plusieurs dossiers.
 
 <dl>
   <dt>Base</dt>
-  <dd class="mbm">Contient la base du framework, le `reset` ainsi quelques bases textes et formulaires.</dd>
+  <dd class="mb-3">Contient la base du framework, le `reset` ainsi quelques bases textes et formulaires.</dd>
   <dt>Components</dt>
-  <dd class="mbm">Un composant est utilisé pour désigner tout élément d'interface utilisateur empaqueté pour la distribution.</dd>
+  <dd class="mb-3">Un composant est utilisé pour désigner tout élément d'interface utilisateur empaqueté pour la distribution.</dd>
   <dt>Helpers</dt>
-  <dd class="mbm">Toutes les variables de configuration ainsi que les fonctions et mixins nécessaires au framework.</dd>
+  <dd class="mb-3">Toutes les variables de configuration ainsi que les fonctions et mixins nécessaires au framework.</dd>
   <dt>Modules</dt>
-  <dd class="mbm">Pour des besoins spécifiques, un module embarque son propre fonctionnement.</dd>
+  <dd class="mb-3">Pour des besoins spécifiques, un module embarque son propre fonctionnement.</dd>
 </dl>
 
 ## Compilation
 
-Afin de complier le dossier `/source` vous devra installer les fichiers de tâches GULP.
-Pour cela télécharger le package GULP.
+Afin de complier le dossier `/source` vous devrez installer les fichiers de tâches GULP. Pour cela télécharger le package GULP.
 
 Au préalable, vous devez avoir:
 * nodejs
 * GULP
 * Sass 3.4.23 Ruby
 
+Commencer par cloner le repo contenant les tâches GULP.
+
 ```sh
+  # Cloner le repo au bon endroit
   git clone git@github.com:Drupalito/gulp_tasks.git {{ dirfolder }}site/
+  # Supprimer le référentiel .git
   rm -rf {{ dirfolder }}site/.git
 ```
 
 Maintenant, il faut installer les dépendances.
 
 ```sh
+  # Se rendre dans le dossier
   cd {{ dirfolder }}site/
+  # Installer les dépendances
   npm install
 ```
 
@@ -65,7 +70,7 @@ Ok, les fichiers sont en place.
 Il reste à modifier le fichier `config.yml` comme si dessous... [vérifier les `path.dist` et `path.src`]
 
 ```yaml
-# Fichier : site/config.yml
+# {{ dirfolder }}site/config.yml
 # Fichier de configuration pour les tâches Gulp.
 name: "{{ site.SITE_NAME }}"
 project: "{{ site.SITE_PROJECT }}"

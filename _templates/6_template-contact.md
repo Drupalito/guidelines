@@ -16,7 +16,7 @@ weight: 6
     <div class="form-item form-type--textfield">
       <label for="edit-mail">Votre adresse de courriel <abbr class="field-required" title="Ce champ est requis.">*</abbr></label>
       <input type="text" id="edit-mail" name="mail" value="{{ site.OWNER_EMAIL }}" size="60" maxlength="255" class="form-text required">
-      <small class="description field-required mts show">Format: nom@exemple.fr</small>
+      <small class="description field-required mt-1 show">Format: nom@exemple.fr</small>
     </div>
     <div class="form-item form-type--textfield">
       <label for="edit-subject">Objet <abbr class="field-required" title="Ce champ est requis.">*</abbr></label>
@@ -43,7 +43,7 @@ weight: 6
       <div class="form-item form-type--textfield">
         <label for="edit-mail">Votre adresse de courriel <abbr class="field-required" title="Ce champ est requis.">*</abbr></label>
         <input type="text" id="edit-mail" name="mail" value="{{ site.OWNER_EMAIL }}" size="60" maxlength="255" class="form-text required">
-        <small class="description field-required mts show">Format: nom@exemple.fr</small>
+        <small class="description field-required mt-1 show">Format: nom@exemple.fr</small>
       </div>
       <div class="form-item form-type--textfield">
         <label for="edit-subject">Objet <abbr class="field-required" title="Ce champ est requis.">*</abbr></label>

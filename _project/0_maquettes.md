@@ -8,6 +8,7 @@ weight: 0
 ---
 
 {% comment %}
+
 {% capture dirfolder %}{{ site.ROOT }}/{{ site.OWNER_NAME }}/{{ site.DIR }}/{% endcapture %}
 
 {% capture files %}{{ dirfolder }}docs/extract/png{% endcapture %}
@@ -15,7 +16,9 @@ weight: 0
 ## Maquettes
 
 {% directory path: files %}
-1. [{{file.name}}](maquette-{{ file.name }}.html){% enddirectory %}
+1. [{{file.name}}](maquette-{{ file.name }}.html)
+{% enddirectory %}
+
 {% endcomment %}
 
 ## Légende

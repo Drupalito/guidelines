@@ -811,8 +811,8 @@ icons:
 <div class="row row-sm-eqheight">
   {% for icon in page.icons %}
     <div class="col-xs-6 col-sm-2 text-center">
-      <div class="card pvl mbl">
-        <span aria-hidden="true" class="mbl fa fa-{{ icon }} size-2x"></span>
+      <div class="card pvl mb-3">
+        <span aria-hidden="true" class="mb-3 fa fa-{{ icon }} size-2x"></span>
         <p class="my-0"><small>{{ icon }}</small></p><div class="clipboard-copy" data-icon-fa="true"><div class="copy bold">Clique copie</div></div>
       </div>
     </div>

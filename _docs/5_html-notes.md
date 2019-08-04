@@ -31,10 +31,10 @@ Ce n'est pas essentiel, mais vous pouvez supprimer les attributs `type` sur les 
 
 ```html
   <script type="text/javascript" src="/js/main.js"></script>
-  <script type="text/javascript">…</script>
+  <script type="text/javascript">/* code */</script>
 
   <!-- Bon -->
   <script src="/js/main.js"></script>
-  <script>…</script>
+  <script>/* code */</script>
 ```
 

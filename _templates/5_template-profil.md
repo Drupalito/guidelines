@@ -33,7 +33,7 @@ weight: 5
             </div>
           </div>
 
-          <div class="row mtl">
+          <div class="row mt-4">
             <div class="col-xs-12 sm-text-right">
               <div class="form-actions form-wrapper">
                 <button id="edit-submit" class="btn btn--primary" name="op"><span class="fa fa-pencil" aria-hidden="true"></span> Modifier mon profil</button>

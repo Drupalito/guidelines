@@ -15,16 +15,16 @@ Ces termes sont des termes généraux de programmation, qui peuvent être utilis
 
 <dl>
   <dt>A11Y</dt>
-  <dd class="mbm">Accessibilité</dd>
+  <dd class="mb-3">Accessibilité</dd>
   <dt>Wireframe</dt>
-  <dd class="mbm">Modélisation de l'ensemble des tâches à accomplir et des différents acteurs impliqués dans la réalisation d'un processus opérationnel dans le but d’en permettre une gestion informatique.</dd>
+  <dd class="mb-3">Modélisation de l'ensemble des tâches à accomplir et des différents acteurs impliqués dans la réalisation d'un processus opérationnel dans le but d’en permettre une gestion informatique.</dd>
 </dl>
 
 ## Outils
 
 <dl>
   <dt>Gulp</dt>
-  <dd class="mbm">Gulp est un outil en ligne de commande qui permet d'automatiser certaines tâches. <a href="http://www.gulpjs.com" target="_blank">Gulpjs.com</a></dd>
+  <dd class="mb-3">Gulp est un outil en ligne de commande qui permet d'automatiser certaines tâches. <a href="http://www.gulpjs.com" target="_blank">Gulpjs.com</a></dd>
   <dt>NPM</dt>
-  <dd class="mbm">NPM est un gestionnaire de paquets utilisé pour télécharger les paquets Node JS.</dd>
+  <dd class="mb-3">NPM est un gestionnaire de paquets utilisé pour télécharger les paquets Node JS.</dd>
 </dl>

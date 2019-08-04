@@ -73,7 +73,7 @@ Garantir une distinction entre le contenu et la fonctionnalité.
   <div class="tab js-tab"><p>This element can be reached by javascript</p></div>
 ```
 
-## Préprocesseurs Sass Compass
+## Préprocesseurs SASS / SCSS
 
 * Placer toujours les déclarations `@extend` en début de bloc ;
 * Regrouper toutes les déclarations `include` en début de bloc juste après les déclarations `@extend`.
@@ -82,7 +82,7 @@ Garantir une distinction entre le contenu et la fonctionnalité.
 .selecteur-1 {
   @extend .other-rule;
   box-sizing: border-box;
-  width: width: 100%;
+  width: 100%;
   /* Autres déclarations */
 }
 ```

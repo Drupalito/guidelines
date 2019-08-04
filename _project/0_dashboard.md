@@ -9,6 +9,7 @@ weight: 0
 ---
 
 {% comment %}
+
 ## Deadline
 
 | Clé   | Valeur
@@ -17,6 +18,7 @@ weight: 0
 | **Date recette** | {{ site.DATE.RECETTE | date_to_long_string }}
 | **Date fin** | {{ site.DATE.END | date_to_long_string }}
 {: .table.table-bordered }
+
 {% endcomment %}
 
 ## Projet

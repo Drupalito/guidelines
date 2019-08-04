@@ -16,7 +16,7 @@ weight: 2
     <br>
     Si les items ne font pas tous la même hauteur, la grille conserve un affichage conforme.
   </p>
-  <div class="mtl">
+  <div class="mt-4">
     <div class="row ">
       <div class="col-xs-12 col-sm-6">
         <div class="card pal text-left">
@@ -48,7 +48,7 @@ weight: 2
     <br>
     Si les items ne font pas tous la même hauteur, des décalages seront observés.
   </p>
-  <div class="mtl">
+  <div class="mt-4">
     <div class="row row-sm-eqheight">
       <div class="col-xs-12 col-sm-6">
         <div class="card pal text-left">
@@ -86,7 +86,7 @@ weight: 2
       <code>.col-bottom</code>
     </p>
   <p></p>
-  <div class="mtl">
+  <div class="mt-4">
     <div class="row row-sm-height">
       <div class="col-xs-12 col-sm-6">
         <div class="card pal text-left">

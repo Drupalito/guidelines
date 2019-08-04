@@ -2,6 +2,7 @@
 layout: asideleft
 title: "Youtube API Iframe"
 description: ""
+group_index: true
 group: "Components"
 category: ""
 weight: 1

@@ -14,7 +14,7 @@ weight: 1
   <p>
     <b>Grille classique bootsrap.</b>
   </p>
-  <div class="mtl">
+  <div class="mt-4">
     <div class="row ">
       <div class="col-xs-12">
         <div class="card pam text-center">
@@ -114,7 +114,7 @@ weight: 1
     <br>
     Cette classe CSS permet de ne pas avoir de bordure horizontale entre chaque colonne
   </p>
-  <div class="mtl">
+  <div class="mt-4">
     <div class="row row-xs-noborder">
       <div class="col-xs-12">
         <div class="card pam text-center">

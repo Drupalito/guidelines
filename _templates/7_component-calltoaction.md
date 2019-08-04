@@ -43,7 +43,7 @@ weight: 7
         <p class="frame__excerpt">Vivamus nunc nunc, lacinia ac nulla eget. Vivamus nunc nunc, lacinia ac nulla eget.<br/>Pellentesque congue sodales lacinia.</p>
       </div>
       <div class="frame__action">
-        <a class="btn btn--secondary" href="#"><span class="fa fa-cog mrs" aria-hidden="true"></span> Call To Action</a>
+        <a class="btn btn--secondary" href="#"><span class="fa fa-cog mr-1" aria-hidden="true"></span> Call To Action</a>
       </div>
     </div>
   </div>
@@ -56,7 +56,7 @@ weight: 7
       <p class="frame__excerpt">Vivamus nunc nunc, lacinia ac nulla eget. Vivamus nunc nunc, lacinia ac nulla eget.<br/>Pellentesque congue sodales lacinia.</p>
     </div>
     <div class="frame__action">
-      <a class="btn btn--secondary" href="#"><span class="fa fa-cog mrs" aria-hidden="true"></span> Call To Action</a>
+      <a class="btn btn--secondary" href="#"><span class="fa fa-cog  mr-1" aria-hidden="true"></span> Call To Action</a>
     </div>
   </div>
 </div>

@@ -6,7 +6,7 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = "styleguide/" + category + "-#{ filename }.html"
+      @name = "styleguide/#{category}-#{filename}.html"
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), "asidestyleguide.html")
@@ -112,7 +112,7 @@ module Jekyll
     end
 
     def generate(site)
-      sourceFiles = "#{ site.config['PATH_TO_SOURCE'] }/scss"
+      sourceFiles = "#{site.config['PATH_TO_SOURCE']}/scss"
 
       filesTree = []
 
@@ -199,16 +199,16 @@ module Jekyll
     end
 
     def html(site, brick, data, file)
-      cssFiles =  "#{ site.config['PATH_TO_THEME'] }/css"
+      cssFiles =  "#{site.config['PATH_TO_THEME']}/css"
       converter = site.find_converter_instance(Jekyll::Converters::Markdown)
 
       output = ""
       data.each do |block|
         extract_body = REGEX_HEADER.match(block[:original])
-        fi = block[:description].sub(extract_body[0], '').strip!
+        fi = block[:description].sub(extract_body[0], "").strip!
         
-        if brick == 'modules'
-          scssSrc = site.config['PATH_TO_SOURCE'] + '/scss'
+        if brick == "modules"
+          scssSrc = "#{site.config['PATH_TO_SOURCE']}/scss"
           output += "<link href='../assets/corecss#{file.gsub(scssSrc, '').gsub('.scss', '.css')}' rel='stylesheet' />"
         end
 
@@ -238,8 +238,14 @@ module Jekyll
             output += "</div>"
           end
           if block[:demos].count >= 1
-            output += "<div class='styleguide__oneup'>"
-            output += "<div class='tab-content'>"
+            if block[:demos].count === 1
+              output += "<div class='styleguide__oneup'>"
+              output += "<div class='tab-inner'>"
+            else
+              output += "<div class='styleguide__twoup'>"
+              output += "<div class='tab-content'>"
+            end
+            # output += "<div class='tab-content'>"
             block[:demos].each_with_index do |demo, index|
               randNumber = generate_code(5)
               isActive = index == 0 ? 'active show' : nil

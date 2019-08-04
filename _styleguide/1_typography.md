@@ -19,7 +19,7 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
 ## Fonts families
 
 {% for link in site.FONT_FAMILIES %}
-* **{{ link[0] }}:** {{ link[1] }} {% endfor %}
+* **{{ link[0] }}:** <span style="font-family:{{ link[1] }}">{{ link[1] }}</span> {% endfor %}
 
 {% if site.FONT_FAMILIES.BODY != site.FONT_FAMILIES.HEADLINE %}
 <h2>BODY: {{ site.FONT_FAMILIES.BODY }}</h2>

@@ -33,8 +33,6 @@ La structure de base d'une page HTML doit avoir:
 
 Toujours fournir un attribut `lang` sur l'élément racine, coupler avec `dir`. S'assurer qu'il affiche la langue correcte pour chaque page, en particulier sur les sites multilingues.
 
-Drupal gère cela très bien. Le thème prend en charge les manques.
-
 ## Métadonnées
 
 La déclaration d'encodage est obligatoire. Elle évite le risque de problèmes d’affichage des caractères.

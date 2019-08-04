@@ -20,7 +20,27 @@
   margin: 0 -1.5em;
   padding: 1.5em;
 }
-.styleguide__demos .styleguide__oneup {
+.styleguide__demos .styleguide__oneup .tab-content {
+  background: #fff;
+  border-right: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  padding: 0 1.5em;
+  border-bottom: 1px solid #dee2e6;
+  position: relative;
+  overflow: hidden;
+}
+.styleguide__demos .styleguide__oneup .tab-content:before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.styleguide__demos .styleguide__twoup {
   background: #fff;
   border-right: 1px solid #dee2e6;
   border-left: 1px solid #dee2e6;
@@ -212,6 +232,7 @@ div.highlighter-rouge {
   background: transparent;
   border: 0;
   border-radius: 0;
+  font-size: 90%;
 }
 .highlighter-rouge .highlight,
 .highlighter-rouge .highlight code {

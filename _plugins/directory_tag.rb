@@ -47,7 +47,7 @@ module Jekyll
     end
 
     def read_file(file_name)
-      file = File.open(file_name, "r")
+      file = File.open(File.realpath(file_name), "r")
       data = file.read
       file.close
       return data
@@ -69,7 +69,7 @@ module Jekyll
       # end
 
       directory_files = File.join(listed_dir, "*")
-      # puts directory_files
+      puts directory_files
       files = Dir.glob(directory_files).reject{|f| f =~ @exclude }
       files.sort! {|x,y| @reverse ? x <=> y : y <=> x }
 
@@ -95,7 +95,7 @@ module Jekyll
             slug = ext ? basename.sub(ext, '') : basename
           end
 
-          datafiles = read_file(filename)
+          datafiles = File.file?(basename) ? read_file(filename) : filename
 
           context['file'] = {
             'date' => date,

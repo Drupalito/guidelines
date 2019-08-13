@@ -2,10 +2,9 @@
 layout: asideleft
 title: "Principes de conception"
 description: "Tout le code réprésentant votre charte graphique, a été conçu pour vous aider à créer de meilleures expériences pour vos utilisateurs. Voici comment utiliser ce styleguide."
-group_index: true
 group: "Docs"
 category: ""
-weight: 0
+weight: 2
 ---
 
 * Laisser le code dans un meilleur état que vous ne l'avez trouvé ;

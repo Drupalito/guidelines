@@ -3,18 +3,19 @@ safe: false
 lsi: false
 # build settings
 markdown: kramdown
-highlighter: rouge
-# kramdown:
-#   input: GFM
-#   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#     default_lang: html
-#     # css_class: 'highlight'
-#     span:
-#       line_numbers: false
-#     block:
-#       line_numbers: true
-#       start_line: 1
+# highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: html
+    span:
+      line_numbers: false
+    block:
+      code_class: 'highlighter-rouge'
+      css_class: 'highlighter-rouge'
+      line_numbers: false
+      start_line: 1
 
 title: "Documentation"
 description: "Documentation Projet"
@@ -42,27 +43,27 @@ collections:
   brand:
     permalink: /:collection/:name.html
     output: true
-    weight: -1
-  project:
-    permalink: /:collection/:name.html
-    output: true
     weight: 0
-  docs:
+  design:
     permalink: /:collection/:name.html
     output: true
-    weight: 1
+    weight: 2
   styleguide:
     permalink: /:collection/:name.html
     output: true
     weight: 2
-  reports:
+  docs:
     permalink: /:collection/:name.html
     output: true
     weight: 3
-  templates:
-    permalink: /:collection/:name.html
-    output: true
-    weight: 4
+  # reports:
+  #   permalink: /:collection/:name.html
+  #   output: true
+  #   weight: 3
+  # templates:
+  #   permalink: /:collection/:name.html
+  #   output: true
+  #   weight: 4
   # drupal:
   #   permalink: /:collection/:name.html
   #   output: true

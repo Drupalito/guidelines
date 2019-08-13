@@ -2,9 +2,9 @@
 layout: asideleft
 title: "Favicon"
 description: ""
-group: "Project"
+group: "Styleguide"
 category: ""
-weight: 3
+weight: 96
 ---
 
 Génération du `favicon` via le service Web [Real Favicon Generator](https://realfavicongenerator.net/){:rel="external"}.

@@ -1,7 +1,7 @@
-<div class="page-contentinfo contentinfo">
-  <footer id="contentinfo" role="contentinfo" class="contentinfo__region container">
+<div class="page-complementary complementary">
+  <footer id="complementary" role="complementary" class="complementary__region container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-sm-8 mb-4">
         <div id="block-address-address" class="block block--address-address block--first first block--last last odd">
           <div class="block__content">
             <div class="address" itemscope itemtype="http://schema.org/Organization" itemref="mOrga">
@@ -12,6 +12,26 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 mb-4">
+        <div id="block-menu-menu" class="block block--menu block--menu-menu block--first first block--last last odd">
+          <div class="block__content">
+            <ul>
+              <li><a href="../project/0-dashboard.html">Informations générales</a></li>
+              <li><a href="../project/1-document-de-connexion.html">Identifiants de connexion</a></li>
+              <li><a href="../project/99-support.html">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="page-contentinfo contentinfo">
+  <footer id="contentinfo" role="contentinfo" class="contentinfo__region container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>©{{ 'now' | date: "%Y" }} {{ site.OWNER_NAME }}. Tous droits réservés.</p>
       </div>
     </div>
   </footer>

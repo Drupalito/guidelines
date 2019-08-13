@@ -2,7 +2,7 @@
 layout: asideleft
 title: "Support & maintenance"
 description: "La page de support fournit des informations sur l'obtention d'aide sur l'utilisation du thème."
-group: "Project"
+group: "Docs"
 category: ""
 weight: 99
 ---

@@ -2,7 +2,7 @@
 layout: asideleft
 title: "Identifiants de connexion"
 description: "Informations relatives aux identifiants de connexion."
-group: "Project"
+group: "Docs"
 category: ""
 weight: 1
 ---

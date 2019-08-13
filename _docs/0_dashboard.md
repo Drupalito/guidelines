@@ -3,7 +3,7 @@ layout: asideleft
 title: "Général"
 description: "Informations relatives au projet."
 group_index: true
-group: "Project"
+group: "Docs"
 category: ""
 weight: 0
 ---

@@ -1,6 +1,6 @@
 ---
 layout: asidestyleguide
-title: "Fontawesome"
+title: "Icones"
 description: ""
 group: "Design Elements"
 weight: 3
@@ -801,18 +801,21 @@ icons:
     Ils sont inclus individuellement comme images d'arrière-plan. Ils ne s'affichent pas dans un navigateur qui ne prend pas en charge la taille de l'arrière-plan.
   </p>
 
-  <p>
-    Exemple d'utilisation:<br/>
-    <code>&lt;span class="fa fa-cog" aria-hidden="true"&gt;&lt;/span&gt;</code>
-  </p>
 </div>
 
+{% highlight js %}
+  <span class="fa fa-cog" aria-hidden="true"></span>
+{% endhighlight %}
 
-<div class="row row-sm-eqheight">
+```html
+  <span class="fa fa-cog" aria-hidden="true"></span>
+```
+
+<div class="row row-sm-eqheight mt-5">
   {% for icon in page.icons %}
     <div class="col-xs-6 col-sm-2 text-center">
-      <div class="card pvl mb-3">
-        <span aria-hidden="true" class="mb-3 fa fa-{{ icon }} size-2x"></span>
+      <div class="card py-2 mb-3">
+        <span aria-hidden="true" class="mb-2 fa fa-{{ icon }} size-2x"></span>
         <p class="my-0"><small>{{ icon }}</small></p><div class="clipboard-copy" data-icon-fa="true"><div class="copy bold">Clique copie</div></div>
       </div>
     </div>

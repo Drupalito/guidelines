@@ -4,7 +4,7 @@ title: "Outils optimisations"
 description: ""
 group: "Docs"
 category: ""
-weight: 99
+weight: 98
 ---
 
 ## Accessibilité & Qualité Web

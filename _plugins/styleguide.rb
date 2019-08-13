@@ -77,7 +77,7 @@ module Jekyll
               language = splitCodeRender[0][0]
               descriptionRender = code2[1].strip.gsub(REGEX_CODE,'')
               demoRender = splitCodeRender[0][1]
-              snippetRender = (code2[1].strip.gsub(/^[ \t]{2}/m,''))
+              snippetRender = (code2[1].strip.gsub(/^[ \t]{2}/m,'')).gsub(descriptionRender, '')
 
               demos.push(
                 :title => title ? title : "",

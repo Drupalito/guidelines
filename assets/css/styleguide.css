@@ -258,6 +258,9 @@ div.highlighter-rouge {
 .highlight .rouge-table tr {
   background: transparent;
 }
+.highlighter-rouge {
+  border-left: 0;
+}
 .highlighter-rouge .highlight .hll {
   background-color: #49483e;
 }

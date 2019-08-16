@@ -6,6 +6,29 @@
 
     {% include header.html %}
 
+    <div id="fullscreen" class="page-fullscreen fullscreen">
+      <div id="fullscreen-block" class="fullscreen__table container">
+        <div class="fullscreen__inner">
+          <div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="fullscreen__content">
+                  <p class="fullscreen__title">Bienvenue</p>
+                  <p class="fullscreen__description">
+                    Bienvenue sur le système de conception officiel de {{ site.SITE_NAME }}.<br/>
+                    Un emplacement unique pour tous besoins en matière de conception de produits.
+                  </p>
+                  <div class="fullscreen__actions">
+                    <a href="#" class="btn btn--default">Commencer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="page-container">
       <div id="container" class="container__region container ptl">
         <div class="row">
@@ -32,6 +55,7 @@
       </div>
     </div>
 
+    {% include footer.html %}
   </div>
 </body>
 </html>

@@ -2,9 +2,10 @@
 layout: asideleft
 title: "Guide de démarrage"
 description: ""
-group: "Docs"
+group_index: true
+group: "Design Elements"
 category: ""
-weight: 1
+weight: 0
 ---
 
 {% capture dirfolder %}{{ site.ROOT }}/{{ site.OWNER_NAME }}/{{ site.DIR }}/{% endcapture %}

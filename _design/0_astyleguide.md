@@ -12,13 +12,13 @@ weight: 0
 <div class="row row-sm-noborder">
   <div class="col-xs-12 col-sm-4">
     <div class="clipboard-copy" style="height:100px;background:{{ site.BODY_COLOR }}" data-color-copy="{{ site.BODY_COLOR }}"><div class="copy bold">Cliquer pour copier</div></div>
-    <p class="mvm"><strong>Default color</strong></p>
-    <p class="mvm"><small><strong>scss:</strong> <code>$body-color</code></small><br/>HEX: <strong>{{ site.BODY_COLOR }}</strong><br/>RGB: <strong>{{ site.BODY_COLOR | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</strong></p>
+    <p class="my-2"><strong>Default color</strong></p>
+    <p class="my-2"><small><strong>scss:</strong> <code>$body-color</code></small><br/>HEX: <strong>{{ site.BODY_COLOR }}</strong><br/>RGB: <strong>{{ site.BODY_COLOR | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</strong></p>
   </div>
   <div class="col-xs-12 col-sm-4">
     <div class="clipboard-copy" style="height:100px;background:{{ site.BODY_BACKGROUND }}" data-color-copy="{{ site.BODY_BACKGROUND }}"><div class="copy bold">Cliquer pour copier</div></div>
-    <p class="mvm"><strong>Default background-color</strong></p>
-    <p class="mvm"><small><strong>scss:</strong> <code>$body-background</code></small><br/>HEX: <strong>{{ site.BODY_BACKGROUND }}</strong><br/>RGB: <strong>{{ site.BODY_BACKGROUND | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</strong></p>
+    <p class="my-2"><strong>Default background-color</strong></p>
+    <p class="my-2"><small><strong>scss:</strong> <code>$body-background</code></small><br/>HEX: <strong>{{ site.BODY_BACKGROUND }}</strong><br/>RGB: <strong>{{ site.BODY_BACKGROUND | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</strong></p>
   </div>
 </div>
 
@@ -29,9 +29,9 @@ weight: 0
 {% for link_color in site.LINK %}
   <div class="col-xs-12 col-sm-3">
     <div class="{{ link_color[0] | downcase }}-background clipboard-copy" style="height:100px;background:{{ link_color[1] }}"></div>
-    <p class="mvm">lien: état <strong>{{ link_color[0] | downcase }}</strong></p>
-    <p class="mvm">HEX: {{ link_color[1] }}<br/>RGB: {{ link_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
-    <p class="mvm"><span class="{{ link_color[0] | downcase }}-background clipboard-copy" style="padding:5px;color:#fff;background:{{ link_color[1] }}">.{{ link_color[0] | downcase }}-background</span><span class="{{ link_color[0] | downcase }}-color clipboard-copy" style="padding:5px;color:{{ link_color[1] }}">.{{ link_color[0] | downcase }}-color</span><span style="padding:5px;border:1px solid;border-color:{{ link_color[1] }};color:{{ link_color[1] }}">.{{ link_color[0] | downcase }}-border</span></p>
+    <p class="my-2">lien: état <strong>{{ link_color[0] | downcase }}</strong></p>
+    <p class="my-2">HEX: {{ link_color[1] }}<br/>RGB: {{ link_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
+    <p class="my-2"><span class="{{ link_color[0] | downcase }}-background clipboard-copy" style="padding:5px;color:#fff;background:{{ link_color[1] }}">.{{ link_color[0] | downcase }}-background</span><span class="{{ link_color[0] | downcase }}-color clipboard-copy" style="padding:5px;color:{{ link_color[1] }}">.{{ link_color[0] | downcase }}-color</span><span style="padding:5px;border:1px solid;border-color:{{ link_color[1] }};color:{{ link_color[1] }}">.{{ link_color[0] | downcase }}-border</span></p>
   </div>
 {% endfor %}
 </div>
@@ -44,32 +44,32 @@ weight: 0
   <div class="row">
     <div class="col-xs-12 col-sm-4">
       <div class="{{ font_color[0] | downcase }}-background clipboard-copy" style="height:100px;" data-color-copy="{{ font_color[1] }}"><div class="copy bold">Cliquer pour copier</div></div>
-      <p class="mt-3 mb-0"><strong>{{ font_color[0] | downcase }}</strong></p>
-      <p class="mt-0 mb-3"><small><strong>scss:</strong> <code>coloriz({{ font_color[0] | downcase }}, base)</code></small></p>
-      <p class="mvm">HEX: {{ font_color[1] }}<br/>RGB: {{ font_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
+      <p class="mt-2 mb-0"><strong>{{ font_color[0] | downcase }}</strong></p>
+      <p class="mt-0 mb-2"><small><strong>scss:</strong> <code>coloriz({{ font_color[0] | downcase }}, base)</code></small></p>
+      <p class="my-2">HEX: {{ font_color[1] }}<br/>RGB: {{ font_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
     </div>
     <div class="col-xs-12 col-sm-8">
       <div class="row row-sm-noborder">
         <div class="col-xs-12 col-sm-4">
           <div class="{{ font_color[0] | downcase }}-background--dark" style="height:40px;"></div>
-          <p class="bold mt-3 mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, dark)</code></small></p>
-          <p class="mt-0 mb-3"><small>darken 15%</small></p>
+          <p class="bold mt-2 mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, dark)</code></small></p>
+          <p class="mt-0 mb-2"><small>darken 15%</small></p>
           <p class="mt-0 mb-0"><small><strong>class css:</strong></small></p>
           <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-background--dark</small></p>
           <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-color--dark</small></p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="{{ font_color[0] | downcase }}-background--light" style="height:40px;"></div>
-          <p class="bold mt-3 mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, light)</code></small></p>
-          <p class="mt-0 mb-3"><small>lighten 15%</small></p>
+          <p class="bold mt-2 mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, light)</code></small></p>
+          <p class="mt-0 mb-2"><small>lighten 15%</small></p>
           <p class="mt-0 mb-0"><small><strong>class css:</strong></small></p>
           <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-background--light</small></p>
           <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-color--light</small></p>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="{{ font_color[0] | downcase }}-background--lighter" style="height:40px;"></div>
-          <p class="bold mt-3 mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, lighter)</code></small></p>
-          <p class="mt-0 mb-3"><small>lighten 45%</small></p>
+          <p class="bold mt-2 mb-0"><small><code>coloriz({{ font_color[0] | downcase }}, lighter)</code></small></p>
+          <p class="mt-0 mb-2"><small>lighten 45%</small></p>
           <p class="mt-0 mb-0"><small><strong>class css:</strong></small></p>
           <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-background--lighter</small></p>
           <p class="mt-0 mb-0"><small>.{{ font_color[0] | downcase }}-color--lighter</small></p>
@@ -85,8 +85,8 @@ weight: 0
 {% for font_color in site.COLORZ_GREY %}
   <div class="col-xs-12 col-sm-2">
     <div class="{{ font_color[0] | downcase }}-background clipboard-copy" style="height:100px;background:{{ font_color[1] }}" data-color-copy="{{ font_color[1] }}"><div class="copy bold">Cliquer pour copier</div></div>
-    <p class="mvm"><small><strong>{{ font_color[0] | downcase }}</strong></small></p>
-    <p class="mvm"><small><strong>scss:</strong> <code>$color-{{ font_color[0] | downcase | replace_first: '_', '-' }}</code></small><br/>
+    <p class="my-2"><small><strong>{{ font_color[0] | downcase }}</strong></small></p>
+    <p class="my-2"><small><strong>scss:</strong> <code>$color-{{ font_color[0] | downcase | replace_first: '_', '-' }}</code></small><br/>
     <small>HEX: {{ font_color[1] }}<br/>RGB: {{ font_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</small></p>
   </div>
 {% endfor %}
@@ -98,8 +98,8 @@ weight: 0
 {% for message_color in site.MESSAGES %}
   <div class="col-xs-6 col-sm-2 col-md-3">
     <div class="{{ message_color[0] | downcase }}-background clipboard-copy" style="height:100px;background:{{ message_color[1] }}" data-color-copy="{{ message_color[1] }}"><div class="copy bold">Cliquer pour copier</div></div>
-    <p class="mvm"><strong>{{ message_color[0] | downcase }}</strong></p>
-    <p class="mvm">HEX: {{ message_color[1] }}<br/>RGB: {{ message_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
+    <p class="my-2"><strong>{{ message_color[0] | downcase }}</strong></p>
+    <p class="my-2">HEX: {{ message_color[1] }}<br/>RGB: {{ message_color[1] | replace_first: '#', '' | hex_to_rgb | join: ', ' }}</p>
   </div>
 {% endfor %}
 </div>

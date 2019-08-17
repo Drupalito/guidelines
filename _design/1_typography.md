@@ -16,14 +16,14 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
 
 <div class="row">
   <div class="col-xs-6 col-sm-3">
-    <p class="card p-4">
-      <strong>Font-size:</strong>
+    <p class="card p-2">
+      <strong>Font-size:</strong><br/>
       {{ BASE_RATIO | times:100 | replace: '.0', '' }}% ({{ site.BASE_FONT_SIZE }})
     </p>
   </div>
   <div class="col-xs-6 col-sm-3">
-    <p class="card p-4">
-      <strong>Interligne:</strong>
+    <p class="card p-2">
+      <strong>Interligne:</strong><br/>
       {{ site.BASE_LINE_HEIGHT }} ({{ BASE_LINE_HEIGHT | divided_by:BASE_FONT_SIZE | round:4 }}em)
     </p>
   </div>
@@ -42,7 +42,7 @@ Pour des raisons d'accessibilité, toutes les déclarations de tailles de font (
 <div class="pvl mvl clearfix">
   <div class="row row-sm-height" style="font-family: {{ site.FONT_FAMILIES.BODY }}">
     <div class="col-xs-12 col-sm-5">
-      <div class="card p-4">
+      <div class="card p-2">
         <p class="size-8x bold mb-0">Aa</p>
         <div data-specimen="lorem">
           <span class="caps">

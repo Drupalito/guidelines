@@ -800,18 +800,13 @@ icons:
   <p>
     Ils sont inclus individuellement comme images d'arrière-plan. Ils ne s'affichent pas dans un navigateur qui ne prend pas en charge la taille de l'arrière-plan.
   </p>
-
 </div>
-
-{% highlight js %}
-  <span class="fa fa-cog" aria-hidden="true"></span>
-{% endhighlight %}
 
 ```html
   <span class="fa fa-cog" aria-hidden="true"></span>
 ```
 
-<div class="row row-sm-eqheight mt-5">
+<div class="row row-sm-eqheight mt-3">
   {% for icon in page.icons %}
     <div class="col-xs-6 col-sm-2 text-center">
       <div class="card py-2 mb-3">

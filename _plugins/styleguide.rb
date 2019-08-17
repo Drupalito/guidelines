@@ -1,4 +1,15 @@
-require 'json'
+# require 'json'
+
+EXCLUDE_SCSS_FILES = %w[
+  _grid.scss 
+  book.scss 
+  contextual.scss 
+  date_api.scss 
+  field_collection.scss 
+  forum.scss 
+  system.base.scss 
+  vertical-tabs.scss
+]
 
 module Jekyll
   class Styleguide < Page
@@ -171,7 +182,7 @@ module Jekyll
 
             decorated_snippet = decorated_snippet_snippet
 
-            if %w(_grid.scss book.scss contextual.scss date_api.scss field_collection.scss forum.scss system.base.scss vertical-tabs.scss).any? { |s| basename.include? s }
+            if EXCLUDE_SCSS_FILES.any? { |file| basename.include? file }
             else
 
               # Converter

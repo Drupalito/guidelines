@@ -20,7 +20,7 @@ La structure de base d'une page HTML doit avoir:
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Titre la page</title>
   <meta name="description" content="Description de la page."/>
-  <link rel="stylesheet" href="screen-base.min.css"/>
+  <link rel="stylesheet" href="/css/screen-base.min.css"/>
 </head>
 <body>
   <!-- Visible content -->
@@ -31,26 +31,28 @@ La structure de base d'une page HTML doit avoir:
 
 ## Déclaration des langues
 
-Toujours fournir un attribut `lang` sur l'élément racine, coupler avec `dir`. S'assurer qu'il affiche la langue correcte pour chaque page, en particulier sur les sites multilingues.
+Toujours fournir un attribut `lang` sur l'élément racine, couplé avec l'attribut `dir` (sens de lecture). S'assurer qu'il affiche la langue correcte pour chaque page, en **particulier sur les sites multilingues**.
 
 ## Métadonnées
 
-La déclaration d'encodage est obligatoire. Elle évite le risque de problèmes d’affichage des caractères.
+La déclaration d'encodage est obligatoire.  
+Elle évite le risque de problèmes d’affichage des caractères.
 
-`<title>` et `meta-description` doivent renseigner un contenu spécifique pour chaque page.
+Les balises `<title>` et `meta-description` doivent **renseigner un contenu spécifique pour chaque page**.
 
 ## Styles
 
-Utiliser `<link rel="stylesheet" href="screen-base.min.css"/>` entre les balises `<head/>`.
+Utiliser les fichiers de style `<link rel="stylesheet" href="screen-base.min.css"/>` entre les balises `<head/>`.
 
-**Nous essayons de limiter le nombre de feuilles de style à 3.**  
+**Nous essayons de limiter le nombre de feuilles de style à 3/4.**    
 Pour chaque feuille de style, le navigateur fait une requête HTTP, et bloque le rendu de la page jusqu'à ce que tout le CSS arrive.
 
 Des styles en lignes peuvent être utilisés pour gérer des couleurs de thème ou des préférences utilisateurs.
 
 ## Scripts
 
-Utiliser `<script src="/js/main.js"></script>` après le contenu de la page. Mettre les balises de scripts avant la fermeture de `</body>`.
+Utiliser `<script src="/js/main.js"></script>` après le contenu de la page.  
+Mettre les balises de scripts avant la fermeture de `</body>`.
 
 ## Encodage et caractères
 
